@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>数据结构(0)--预备知识 | wallleap</title>
+  <meta name="keywords" content=" 数据结构 , C/C++ ">
+  <meta name="description" content="数据结构(0)--预备知识 | wallleap">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="[ルー・ワンwallleap]      与&amp;nbsp; luwang&amp;nbsp; （  真（ま）白（しろ）  ）  对话中...         bot_ui_ini()">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
+<meta property="og:site_name" content="wallleap">
+<meta property="og:description" content="[ルー・ワンwallleap]      与&amp;nbsp; luwang&amp;nbsp; （  真（ま）白（しろ）  ）  对话中...         bot_ui_ini()">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2020-02-23T07:04:01.366Z">
+<meta property="article:author" content="Luwang">
+<meta property="article:tag" content="wallleap">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/sublime.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/photoswipe/4.1.2/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+    <link rel="stylesheet" href="/css/customize.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/honjun/hexo-tag-emojis-byhj/css/emoji.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/hititle.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.js"></script>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="wallleap" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar lozad" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Luwang</span>
+</div>
+
+$(function () {
+    const observer = lozad();
+    observer.observe();
+});
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/wallleap" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="http://weibo.com/u/6023739034" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/9357dd145d53" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/8afbefe61c28c0fafed189b234afc91d" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://me.csdn.net/qq_36949103" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:15579576761@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=990083804&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=453867086" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+<a class="more-menus">更多菜单</a>
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(24)</small></div></li>
+    
+        
+            
+            <li><div data-rel="编程"><i class="fold iconfont icon-right"></i>编程<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据结构">数据结构<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="笔记"><i class="fold iconfont icon-right"></i>笔记<small>(6)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="转载">转载<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Hexo">Hexo<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="黑苹果">黑苹果<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="转载"><i class="fold iconfont icon-right"></i>转载<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="主题">主题<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="电脑">电脑<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="资源"><i class="fold iconfont icon-right"></i>资源<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="图集">图集<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="阅读">阅读<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="网络"><i class="fold iconfont icon-right"></i>网络<small>(10)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="华三">华三<small>(4)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    <a class="dynamic-menu site_url"   href="/photo">相册</a>
+    
+    
+    <a class="dynamic-menu " target="_self"   href="https://wallleap.cn">wallleap</a>
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/wallleap">github</a>
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="24">
+<input type="hidden" id="yelog_site_word_count" value="41.1k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="以 in: 开头进行全文搜索" />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color5">数据结构</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">C/C++</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">技术</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">考研</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">英语</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">主题</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Win10</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">Ubuntu</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">逆水寒</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">图集</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">悦读</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">GitHub</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Blog</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">w650dc</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">hackintosh</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">黑苹果</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">HCL</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">华三</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">安装</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">实验</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">配置</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">eNsp</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">STP</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">RIP</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">eNSP</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">OSPF</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ACL</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">NAT</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">企业网</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="编程 数据结构 "
+           href="/2019/08/25/DataStructure0/"
+           data-tag="数据结构,C/C++"
+           data-author="" >
+            <span class="post-title" title="数据结构(0)--预备知识">数据结构(0)--预备知识</span>
+            <span class="post-date" title="2019-08-25 10:18:51">2019/08/25</span>
+        </a>
+        
+        <a  class="编程 数据结构 "
+           href="/2019/08/28/DataStructure1/"
+           data-tag="数据结构,C/C++,技术"
+           data-author="" >
+            <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
+            <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
+        </a>
+        
+        <a  class="笔记 转载 "
+           href="/2019/10/31/English_ReadWay/"
+           data-tag="考研,英语"
+           data-author="" >
+            <span class="post-title" title="唐迟阅读方法论">唐迟阅读方法论</span>
+            <span class="post-date" title="2019-10-31 21:58:17">2019/10/31</span>
+        </a>
+        
+        <a  class="转载 主题 "
+           href="/2018/12/12/Hexo-Theme-Sakura/"
+           data-tag="主题"
+           data-author="" >
+            <span class="post-title" title="Hexo-Theme-Sakura">Hexo-Theme-Sakura</span>
+            <span class="post-date" title="2018-12-12 22:16:01">2018/12/12</span>
+        </a>
+        
+        <a  class="电脑 "
+           href="/2019/11/07/WLU/"
+           data-tag="Win10,Ubuntu"
+           data-author="" >
+            <span class="post-title" title="Win10启用其子系统Ubuntu并安装图形界面">Win10启用其子系统Ubuntu并安装图形界面</span>
+            <span class="post-date" title="2019-11-07 10:21:17">2019/11/07</span>
+        </a>
+        
+        <a  class="资源 图集 "
+           href="/2019/09/20/atlas1/"
+           data-tag="逆水寒,图集"
+           data-author="" >
+            <span class="post-title" title="图集1-逆水寒">图集1-逆水寒</span>
+            <span class="post-date" title="2019-09-20 20:15:12">2019/09/20</span>
+        </a>
+        
+        <a  class="阅读 "
+           href="/2019/09/15/book1/"
+           data-tag="悦读"
+           data-author="" >
+            <span class="post-title" title="书单1--平凡的世界">书单1--平凡的世界</span>
+            <span class="post-date" title="2019-09-15 19:32:39">2019/09/15</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/08/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-08-08 19:32:39">2019/08/08</span>
+        </a>
+        
+        <a  class="笔记 Hexo "
+           href="/2019/08/24/mac-blog2/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(2)--优化配置">Mac使用Hexo和GitHub搭建博客(2)--优化配置</span>
+            <span class="post-date" title="2019-08-24 20:21:59">2019/08/24</span>
+        </a>
+        
+        <a  class="笔记 Hexo "
+           href="/2019/08/24/mac-blog1/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(1)--搭建博客">Mac使用Hexo和GitHub搭建博客(1)--搭建博客</span>
+            <span class="post-date" title="2019-08-24 20:14:35">2019/08/24</span>
+        </a>
+        
+        <a  class="笔记 Hexo "
+           href="/2019/08/25/mac-blog3/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(3)--发布文章">Mac使用Hexo和GitHub搭建博客(3)--发布文章</span>
+            <span class="post-date" title="2019-08-25 08:46:41">2019/08/25</span>
+        </a>
+        
+        <a  class="笔记 Hexo "
+           href="/2019/08/25/mac-blog4/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(4)--博客维护">Mac使用Hexo和GitHub搭建博客(4)--博客维护</span>
+            <span class="post-date" title="2019-08-25 09:30:28">2019/08/25</span>
+        </a>
+        
+        <a  class="转载 主题 "
+           href="/2020/02/04/hexotheme/"
+           data-tag="主题"
+           data-author="" >
+            <span class="post-title" title="都2020了，带你开发hexo主题">都2020了，带你开发hexo主题</span>
+            <span class="post-date" title="2020-02-04 22:16:01">2020/02/04</span>
+        </a>
+        
+        <a  class="笔记 黑苹果 "
+           href="/2019/03/14/w650dc-hackintosh/"
+           data-tag="w650dc,hackintosh,黑苹果"
+           data-author="" >
+            <span class="post-title" title="毁灭者DC W650DC装黑苹果心得">毁灭者DC W650DC装黑苹果心得</span>
+            <span class="post-date" title="2019-03-14 21:27:46">2019/03/14</span>
+        </a>
+        
+        <a  class="网络 华三 "
+           href="/2019/09/09/web-HCL0/"
+           data-tag="HCL,华三,安装"
+           data-author="" >
+            <span class="post-title" title="HCL的安装和使用">HCL的安装和使用</span>
+            <span class="post-date" title="2019-09-09 21:34:37">2019/09/09</span>
+        </a>
+        
+        <a  class="网络 华三 "
+           href="/2019/09/09/web-HCL1/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(一)--ping通及Telnet">HCL配置(一)--ping通及Telnet</span>
+            <span class="post-date" title="2019-09-09 21:54:19">2019/09/09</span>
+        </a>
+        
+        <a  class="网络 华三 "
+           href="/2019/09/11/web-HCL2/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(二)--VLAN间通信">HCL配置(二)--VLAN间通信</span>
+            <span class="post-date" title="2019-09-11 18:06:05">2019/09/11</span>
+        </a>
+        
+        <a  class="网络 华三 "
+           href="/2019/09/12/web-HCL3/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(三)–-DHCP配置">HCL配置(三)–-DHCP配置</span>
+            <span class="post-date" title="2019-09-12 15:42:43">2019/09/12</span>
+        </a>
+        
+        <a  class="网络 "
+           href="/2019/09/18/web-HCL4/"
+           data-tag="HCL,华三"
+           data-author="" >
+            <span class="post-title" title="DHCP配置(续)--DHCP中继">DHCP配置(续)--DHCP中继</span>
+            <span class="post-date" title="2019-09-18 16:14:16">2019/09/18</span>
+        </a>
+        
+        <a  class="网络 "
+           href="/2019/09/18/web-HCL5/"
+           data-tag="eNsp,STP"
+           data-author="" >
+            <span class="post-title" title="STP及VRRP配置">STP及VRRP配置</span>
+            <span class="post-date" title="2019-09-18 16:13:56">2019/09/18</span>
+        </a>
+        
+        <a  class="网络 "
+           href="/2019/09/19/web-HCL6/"
+           data-tag="eNsp,RIP"
+           data-author="" >
+            <span class="post-title" title="RIP配置">RIP配置</span>
+            <span class="post-date" title="2019-09-19 16:13:56">2019/09/19</span>
+        </a>
+        
+        <a  class="网络 "
+           href="/2019/09/27/web-HCL7/"
+           data-tag="eNSP,OSPF"
+           data-author="" >
+            <span class="post-title" title="OSPF配置">OSPF配置</span>
+            <span class="post-date" title="2019-09-27 07:58:04">2019/09/27</span>
+        </a>
+        
+        <a  class="网络 "
+           href="/2019/09/27/web-HCL8/"
+           data-tag="eNSP,ACL,NAT"
+           data-author="" >
+            <span class="post-title" title="ACL+NAT配置">ACL+NAT配置</span>
+            <span class="post-date" title="2019-09-27 07:58:17">2019/09/27</span>
+        </a>
+        
+        <a  class="网络 "
+           href="/2019/09/30/web-HCL9/"
+           data-tag="eNSP,企业网"
+           data-author="" >
+            <span class="post-title" title="使用eNSP搭建企业网络">使用eNSP搭建企业网络</span>
+            <span class="post-date" title="2019-09-30 07:58:17">2019/09/30</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-DataStructure0" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">数据结构(0)--预备知识</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="编程">编程</a>/
+            
+                <a  data-rel="数据结构">数据结构</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">数据结构</a>
+            
+            <a class="color1">C/C++</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-10-24 12:49:59'>2019-08-25 10:18</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:2.2k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-引言"><span class="toc-text">0.引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-变量和数据类型"><span class="toc-text">1.变量和数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-输入输出"><span class="toc-text">2.输入输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-三大基本结构"><span class="toc-text">3.三大基本结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-数组"><span class="toc-text">4.数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-字符串"><span class="toc-text">5.字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-函数"><span class="toc-text">6.函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-递归"><span class="toc-text">7.递归</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-指针和引用"><span class="toc-text">8.指针和引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-结构体"><span class="toc-text">7.结构体</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="0-引言"><a href="#0-引言" class="headerlink" title="0.引言"></a>0.引言</h2><blockquote>
+<p>程序(Program) = 算法(Algorithms) + 数据结构(Data Structure)<br></p>
+</blockquote>
+<p>数据结构需要使用程序语言来描述，比如C/C++</p>
+<blockquote>
+<p>以下是C/C++的第一个程序</p>
+</blockquote>
+<pre><code class="C">#include &lt;stdio.h&gt;           // 预处理指令
+#include &lt;stdlib.h&gt;          // 将stdio.h和stdlib.h引入程序，stdio中包含标准输入输出函数 stdlib为标准库头文件，一些宏和一些函数如malloc()、system()等需要用到 在C++中为cstdio、cstdlib
+int main()                  // main函数函数头
+{                           // {...}为函数体
+    printf(&quot;Hello World&quot;);  // 打印语句
+    return 0;               // 函数返回0，0称为函数返回值
+}
+// 注释：单行注释使用&quot;//&quot;,块注释使用&quot;/* */&quot;,Java中文档注释使用&quot;/** */&quot;</code></pre>
+<pre><code class="C++">#include &lt;iostream&gt;
+using namespace std;        // 使用std这个命名空间，函数体中使用cout、cin就不需要写成std::cout、std::cin的格式了
+int main()
+{
+    cout &lt;&lt; &quot;Hello World&quot; &lt;&lt;endl;
+    return 0;
+}
+//main(int argc,char *argv[])--带参数的main函数 argc代表命令行参数的个数，argv[0]存放的是命令，argv[i]存放的是命令行中的第i个参数(i&gt;=1)eg:ping 192.168.1.1   argc=1;argv[0]=&quot;ping&quot;;argv[1]=&quot;192.168.1.1&quot;;</code></pre>
+<p>C/C++程序运行：源程序test.c(.cpp)-<code>编译</code>-&gt;二进制文件test.obj-<code>连接</code>-&gt;test.exe(或其他可执行文件)-<code>运行</code>-&gt;运行成功或失败</p>
+<h2 id="1-变量和数据类型"><a href="#1-变量和数据类型" class="headerlink" title="1.变量和数据类型"></a>1.变量和数据类型</h2><ul>
+<li><blockquote>
+<p>常量</p>
+</blockquote>
+</li>
+</ul>
+<p><code>常量</code>是程序运行过程中值不能改变的量<br><code>(1)整型常量</code>：如10000，0，-345<br><code>(2)实型常量</code>：123.4，0.0，-9.79，12.34e3(12.34x10^3)<br><code>(3)字符常量</code>：普通字符如’a’，’Z’，’3’，’?’及转义字符\n，\t等<br><code>(4)字符串常量</code>：”hello”，”12346”<br><code>(5)符号常量</code>：不占内存</p>
+<pre><code>#define PI 3.1415926</code></pre><pre><code>const float PI = 3.14159f;</code></pre><ul>
+<li><blockquote>
+<p>变量</p>
+</blockquote>
+</li>
+</ul>
+<p><code>变量</code>代表一个有名字的、具有特定属性的一个存储单元，用来存放变量的值，变量的值是可以改变的。变量必须先定义，后使用。<br><code>变量定义</code>：</p>
+<pre><code>&lt;数据类型&gt; &lt;变量名1&gt;[,&lt;变量名2&gt;,···];</code></pre><p>如<code>int a;</code>  <code>char c;</code>  <code>double b;</code>  <code>bool isE;</code>等<br><code>变量名</code>使用标识符来标识。用来对变量、符号常量名、函数、数组、类型等命名的有效字符徐磊统称为<code>标识符</code>。标识符由大小写字母、数字字符和下划线组成，且第一个字符不能为数字，还有用户定义的标识符不能和系统保留关键字同名。<br>在同一个作用域中不能有两个或两个以上相同的变量名<br><code>变量赋值和初始化</code><br>(1)定义后赋值</p>
+<pre><code>int x,y;
+x = 8;
+y = x;</code></pre><p>(2)定义的同时赋值</p>
+<pre><code>int n = 1;
+double d = 1.25;
+char c = &#39;a&#39;;</code></pre><p>(3)定义多个变量时单独赋一个</p>
+<pre><code>int n1, n2 = 4, n3;</code></pre><p>(4)C++中</p>
+<pre><code>int n1(1), n2(4), n3;       //定义三个整型变量n1、n2、n3,且赋初值n1为1、n2为4</code></pre><ul>
+<li><blockquote>
+<p>保留关键字</p>
+</blockquote>
+</li>
+</ul>
+<p><code>asm</code> <code>auto</code> <code>break</code> <code>case</code> <code>catch</code>  <code>char</code>  <code>class</code>  <code>const</code>  <code>continue</code>  <code>default</code>  <code>delete</code>  <code>do</code>  <code>double</code> <code>else</code>  <code>enum</code>  <code>extern</code>  <code>float</code>  <code>for</code> <code>friend</code>  <code>goto</code>  <code>if</code>  <code>inline</code>  <code>int</code>  <code>long</code>  <code>new</code>  <code>operator</code>  <code>private</code>  <code>protected</code>  <code>public</code>  <code>register</code>  <code>return</code>  <code>short</code>  <code>signed</code>  <code>sizeof</code>  <code>static</code>  <code>struct</code>  <code>switch</code>  <code>template</code>  <code>this</code>  <code>throw</code>  <code>try</code>  <code>typedef</code>  <code>union</code>  <code>unisigned</code>  <code>virtual</code>  <code>void</code>  <code>volatile</code>  <code>while</code></p>
+<ul>
+<li><blockquote>
+<p>数据类型</p>
+</blockquote>
+</li>
+</ul>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/DataStructure0/pic1.jpg" alt="数据类型"><br>使用<code>sizeof()</code>获取数据类型字宽</p>
+<ul>
+<li><blockquote>
+<p>运算符和表达式</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><code>算术运算符</code>：四则运算(<code>+</code> 、<code>-</code>、<code>*</code>、<code>/</code>),求余(<code>%</code>),自增(<code>++</code>),自减(<code>--</code>)</li>
+<li><code>关系运算符</code>：大等小(<code>&gt;</code>、<code>&gt;=</code>、<code>==</code>、<code>&lt;</code>、<code>&lt;=</code>),不等(<code>!=</code>)</li>
+<li><code>逻辑运算符</code>：与或非(<code>&amp;&amp;</code>、<code>||</code>、<code>!</code>)</li>
+<li><code>位运算符</code>：按位与(<code>&amp;</code>)、按位或(<code>|</code>)、按位异或(<code>^</code>)、取反(<code>~</code>)、左移(<code>&lt;&lt;</code>)、右移(<code>&gt;&gt;</code>)</li>
+<li><code>赋值运算符</code>：赋值(<code>=</code>),扩展(<code>+=</code>、<code>-=</code>、<code>/=</code>、<code>*=</code>、<code>%=</code>···)</li>
+<li><code>条件运算符</code>：(<code>? :</code>)</li>
+<li><code>逗号运算符</code>：(<code>,</code>)</li>
+<li><code>指针运算符</code>：(<code>*</code>、<code>&amp;</code>)</li>
+<li><code>求字节数运算符</code>：(<code>sizeof()</code>)</li>
+<li><code>强制类型转换运算符</code>：(<code>(&lt;type&gt;)</code>)</li>
+<li><code>成员运算符</code>：(<code>.</code>、<code>-&gt;</code>)</li>
+<li><code>下标运算符</code>：(<code>[]</code>)</li>
+<li><code>其他</code>：函数调用(<code>()</code>)</li>
+</ul>
+<p><em>注意运算符的优先级，运算顺序</em></p>
+<ul>
+<li><code>运算符表达式</code>–用算术运算符和括号将运算对象连接起来的，符合C/C++语法规则的式子</li>
+</ul>
+<ul>
+<li><blockquote>
+<p>语句</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><strong>控制语句</strong> –控制功能语句<ul>
+<li>条件语句 <code>if()···else···</code></li>
+<li>循环语句 <code>for()···</code>、<code>while()···</code>、<code>do···while();</code></li>
+<li>结束本次循环 <code>continue</code></li>
+<li>终止执行switch语句或循环语句 <code>break</code></li>
+<li>多分支选择语句 <code>switch()</code></li>
+<li>函数返回语句 <code>return</code></li>
+<li>转向语句 <code>goto</code></li>
+</ul>
+</li>
+<li><strong>函数调用语句</strong> –函数调用加分号结尾<ul>
+<li><code>printf(&quot;1&quot;);</code></li>
+<li><code>max(1,2);</code></li>
+</ul>
+</li>
+<li><strong>表达式语句</strong> –表达式加分号结尾<ul>
+<li>赋值语句 <code>a=3;</code></li>
+<li><code>i++;</code></li>
+</ul>
+</li>
+<li><strong>空语句</strong> <code>;</code> 只有一个分号，什么也不做</li>
+<li><strong>复合语句</strong> –用<code>{}</code>把语句和声明括起来，又称语句块</li>
+</ul>
+<p><em>函数体包含声明部分和执行部分，执行部分是由语句组成的，语句的作用是向计算机系统发出操作指令，要求执行相应的操作。</em></p>
+<h2 id="2-输入输出"><a href="#2-输入输出" class="headerlink" title="2.输入输出"></a>2.输入输出</h2><blockquote>
+<p>input：</p>
+</blockquote>
+<ul>
+<li><code>scanf(&quot;%c&quot;,&amp;s);</code></li>
+<li><code>a = getchar();</code></li>
+<li><code>gets();</code></li>
+<li><code>std::cin &gt;&gt; a;</code></li>
+</ul>
+<blockquote>
+<p>output:</p>
+</blockquote>
+<ul>
+<li><code>printf(&quot;%s&quot;,s);</code></li>
+<li><code>putchar(a);</code></li>
+<li><code>puts();</code></li>
+<li><code>std::cout &lt;&lt; a &lt;&lt;endl;</code></li>
+</ul>
+<blockquote>
+<p>格式控制</p>
+</blockquote>
+<ul>
+<li><p><code>%d</code>、<code>%i</code>–十进制整型</p>
+</li>
+<li><p><code>%o</code>–八进制整型</p>
+</li>
+<li><p><code>%x</code>、<code>%X</code>–十六进制数</p>
+</li>
+<li><p><code>%u</code>–无符号型</p>
+</li>
+<li><p><code>%c</code>–字符</p>
+</li>
+<li><p><code>%s</code>–字符串</p>
+</li>
+<li><p><code>%f</code>–6位小数单双精度</p>
+</li>
+<li><p><code>%e</code>、<code>%E</code>–指数形式的实型</p>
+</li>
+<li><p><code>%g</code>、<code>%G</code>–自动选择%f %e</p>
+</li>
+<li><p><code>%l</code>–长整型，加在d、o、x、u前</p>
+</li>
+<li><p><code>%-m.nf</code>–向左靠齐，m个宽度，n为小数的实数</p>
+</li>
+</ul>
+<h2 id="3-三大基本结构"><a href="#3-三大基本结构" class="headerlink" title="3.三大基本结构"></a>3.三大基本结构</h2><blockquote>
+<p>顺序结构</p>
+</blockquote>
+<p><em>在顺序结构中，各语句是自上而下的顺序执行的，执行完上一个语句就自动执行下一个语句，是无条件的，不需要作任何判断。是最简单的程序结构。</em></p>
+<blockquote>
+<p>选择(分支)结构</p>
+</blockquote>
+<ul>
+<li>根据某个条件是否满足来决定是否执行指定的操作</li>
+</ul>
+<p><strong>if语句</strong> 选择结构</p>
+<pre><code>if(表达式) 语句1
+[else 语句2]
+/*
+此处的表达式主要为：
+关系表达式 （a&gt;b）==c
+逻辑表达式  !a&amp;&amp;(b||c)
+条件表达式  a&gt;b ? (max=a) : (max=b)
+*/</code></pre><p><em>注意if语句的嵌套</em></p>
+<ul>
+<li>满足条件后从给定的两种或多种操作选择其一</li>
+</ul>
+<p><strong>switch语句</strong> 多分支选择结构</p>
+<pre><code>switch(表达式){
+    case 常量1:语句1 break;
+    case 常量2:语句2 break;
+        ·
+        ·
+        ·
+    case 常量n:语句n break;
+    default:语句n+1
+}
+/*
+·表达式的值为整数类型
+·表达式中的值满足下面的常量i,则case 常量i,执行语句i
+·遇到break跳出switch，一直没有break则一直按顺序往下执行语句
+·没有找到常量i,则执行default后的语句，如果没有default也没找到常量i则不执行任何语句
+·每个常量必须不同
+·case只起标记作用
+·多个case标号可以共用一组执行语句
+*/</code></pre><blockquote>
+<p>循环结构</p>
+</blockquote>
+<ul>
+<li><strong>while语句</strong></li>
+</ul>
+<pre><code>while(表达式)
+{
+    循环体
+}
+/* 先判断表达式，后执行循环语句 */</code></pre><ul>
+<li><strong>do···while语句</strong></li>
+</ul>
+<pre><code>do
+{
+    循环体
+}while(表达式);
+/* 先无条件执行循环体，然后判断循环条件是否成立。因此最少需要执行循环体一次。 */</code></pre><ul>
+<li><strong>for语句</strong></li>
+</ul>
+<pre><code>for(循环变量赋初值;循环条件;循环变量增值){
+    循环体
+}
+/* 表达式可以省，但是分号要保留 */</code></pre><ul>
+<li><strong>循环的嵌套</strong></li>
+</ul>
+<p>注意分析即可</p>
+<ul>
+<li><strong>改变循环执行状态</strong></li>
+</ul>
+<p><code>continue</code>：结束本次循环<br><code>break</code>:终止整个循环</p>
+<a id="more"></a>
+
+
+<h2 id="4-数组"><a href="#4-数组" class="headerlink" title="4.数组"></a>4.数组</h2><p><code>数组</code>是相同类型的元素的有序集合。每个元素在内存中占用相同大小的内存单元，这些内存单元在内存空间中都是连续存放的。</p>
+<blockquote>
+<p>一维数组</p>
+</blockquote>
+<ul>
+<li>定义<br><code>类型 数组名[常量表达式];</code> 比如<code>int a[10];</code>这是一个含有a[0]到a[9]十个元素的名字为a的数组</li>
+</ul>
+<ul>
+<li><p>引用<br><code>数组名[下标]</code></p>
+</li>
+<li><p>初始化</p>
+<ul>
+<li>在定义时对所有数组元素初始化 <code>int a[5] = {0,1,2,3,4};</code></li>
+<li>定义时部分元素初始化，其余为0 <code>int a[5] = {0,1};</code></li>
+<li>全部赋值为0 <code>int a[5] = {0,0,0,0,0};</code>或<code>int a[5] = {0};</code></li>
+<li>对全部袁术赋初值时，数据个数已定了，故可省略 <code>int a[] = {0,1,2,3,4};</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>二维数组</p>
+</blockquote>
+<ul>
+<li>定义</li>
+</ul>
+<p><code>类型 数组名[常量表达式1][常量表达式2];</code>比如<code>float a[3][4],b[5][10];</code>,C中存放数组是按行优先的</p>
+<ul>
+<li>引用<br><code>数组名[下标][下标]</code></li>
+</ul>
+<ul>
+<li>初始化<ul>
+<li>分行赋值 <pre><code>int a[3][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};</code></pre></li>
+<li>不分行   <pre><code>int a[3][4] = {1,2,3,4,5,6,7,8,9,10,11,12};</code></pre></li>
+<li>部分元素赋值  <pre><code>int a[3][4] = {{1},{5},{9}};</code></pre></li>
+<li>全部元素赋值，只能省前面维度的数值 <pre><code>int a[][4] = {1,2,3,4,5,6,7,8,9,10,11,12};</code></pre></li>
+<li>分行赋值省前面维度 <pre><code>int a[][4] = {{0,0,3},{},{0,10}};</code></pre></li>
+</ul>
+</li>
+</ul>
+<h2 id="5-字符串"><a href="#5-字符串" class="headerlink" title="5.字符串"></a>5.字符串</h2><blockquote>
+<p>字符数组</p>
+</blockquote>
+<blockquote>
+<p>string类</p>
+</blockquote>
+<blockquote>
+<p>字符串处理函数</p>
+</blockquote>
+<h2 id="6-函数"><a href="#6-函数" class="headerlink" title="6.函数"></a>6.函数</h2><h2 id="7-递归"><a href="#7-递归" class="headerlink" title="7.递归"></a>7.递归</h2><h2 id="8-指针和引用"><a href="#8-指针和引用" class="headerlink" title="8.指针和引用"></a>8.指针和引用</h2><h2 id="7-结构体"><a href="#7-结构体" class="headerlink" title="7.结构体"></a>7.结构体</h2>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>数据结构(0)--预备知识</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">2.2k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-08-25, 10:18:51</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-24, 12:49:59</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/25/DataStructure0/" title="数据结构(0)--预备知识">https://wallleap.cn/2019/08/25/DataStructure0/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2019-2020 wallleap</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+$(function () {
+    const observer = lozad();
+    observer.observe();
+});
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#数据结构','#C/C++','#技术','#考研','#英语','#主题','#Win10','#Ubuntu','#逆水寒','#图集','#悦读','#Hexo','#GitHub','#Blog','#博客','#w650dc','#hackintosh','#黑苹果','#HCL','#华三','#安装','#实验','#配置','#eNsp','#STP','#RIP','#eNSP','#OSPF','#ACL','#NAT','#企业网',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+    .post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    <a class="dynamic-menu site_url"   href="/photo">相册</a>
+    
+    
+    <a class="dynamic-menu " target="_self"   href="https://wallleap.cn">wallleap</a>
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/wallleap">github</a>
+    
+</div>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<div class="aplayer"
+
+    data-id="2162711186"
+
+    data-server="netease"
+
+    data-type="playlist"
+
+    data-fixed="true"
+
+    data-autoplay="false"
+
+    data-loop="all"
+
+    data-order="random"
+
+    data-preload="auto"
+
+    data-volume="0.7"
+
+    data-mutex="true"
+
+>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
+$(function () {
+    const observer = lozad();
+    observer.observe();
+});
+
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+//前面需要引入fancybox的css和js，这里省略
+<script>
+(function() {
+  //前面部分是判断是标签否为图集的文章，根据需求可以舍弃
+  var arr = new Array();
+  var $tags = $('.post-tags').children('a');
+  $tags.each(function() {
+    arr.push($(this).html())
+  })
+  if (arr.indexOf("图集") !== -1) {
+    //如果是图集
+    $('.hj_img').each(function() {
+      $(this).wrap('<a class="fancybox" data-fancybox="gallery" href="' + $(this).prop("src") + '"></a>'); 
+    })
+    //初始化fancybox，padding设为0，loop设为false
+    $('.fancybox').fancybox({
+      padding: 0,
+      loop: false
+    });
+  }
+})();
+</script>
+
+</html>
