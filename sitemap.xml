@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wallleap.cn/2020/02/08/hexo-blog/</loc>
+    
+    <lastmod>2020-02-29T14:22:34.634Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wallleap.cn/2019/08/24/mac-blog1/</loc>
+    
+    <lastmod>2020-02-29T13:06:49.363Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wallleap.cn/2019/08/25/mac-blog4/</loc>
     
     <lastmod>2020-02-29T12:49:52.458Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://wallleap.cn/2019/08/25/mac-blog3/</loc>
     
     <lastmod>2020-02-27T08:51:50.576Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wallleap.cn/2019/08/24/mac-blog1/</loc>
-    
-    <lastmod>2020-02-27T08:50:25.477Z</lastmod>
     
   </url>
   

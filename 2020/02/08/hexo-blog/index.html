@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="referrer" content="no-referrer" />
-  <title>HCL配置(二)--VLAN间通信 | wallleap</title>
-  <meta name="keywords" content=" HCL , 华三 , 实验 , 配置 ">
-  <meta name="description" content="HCL配置(二)--VLAN间通信 | wallleap">
+  <title>闲着也是闲着，不如搭个免费的博客玩玩 | wallleap</title>
+  <meta name="keywords" content=" Hexo , GitHub , Blog , 博客 ">
+  <meta name="description" content="闲着也是闲着，不如搭个免费的博客玩玩 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="[ルー・ワンwallleap]      与&amp;nbsp; luwang&amp;nbsp; （  真（ま）白（しろ）  ）  对话中...         bot_ui_ini()">
 <meta property="og:type" content="website">
@@ -757,9 +757,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-web-HCL2" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-hexo-blog" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">HCL配置(二)--VLAN间通信</h1>
+        <h1 class="article-title">闲着也是闲着，不如搭个免费的博客玩玩</h1>
     
     <div class="article-meta">
         
@@ -767,34 +767,34 @@
         
         <span class="book">
             
-                <a  data-rel="网络">网络</a>/
+                <a  data-rel="笔记">笔记</a>/
             
-                <a  data-rel="华三">华三</a>
+                <a  data-rel="Hexo">Hexo</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color4">HCL</a>
+            <a class="color5">Hexo</a>
             
-            <a class="color3">华三</a>
+            <a class="color2">GitHub</a>
             
-            <a class="color3">实验</a>
+            <a class="color5">Blog</a>
             
-            <a class="color3">配置</a>
+            <a class="color3">博客</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-24 12:49:59'>2019-09-11 18:06</time>
+        创建时间:<time class="date" title='更新时间: 2020-02-29 22:22:34'>2020-02-08 21:34</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:711</span>
+        <span>字数:4.5k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -824,7 +824,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HCL配置-二-–VLAN间通信"><span class="toc-text">HCL配置(二)–VLAN间通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、任务"><span class="toc-text">一、任务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、配置"><span class="toc-text">二、配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-通过三层交换机使用SVI实现通信"><span class="toc-text">(一)通过三层交换机使用SVI实现通信</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、配置PC"><span class="toc-text">1、配置PC</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、最上面的交换机S0"><span class="toc-text">2、最上面的交换机S0</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、左边交换机S1"><span class="toc-text">3、左边交换机S1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4、右边交换机S2"><span class="toc-text">4、右边交换机S2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5、测试"><span class="toc-text">5、测试</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-其他方法"><span class="toc-text">(二)其他方法</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、软件安装及Github配置"><span class="toc-text">一、软件安装及Github配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、hexo初始化及本地测试"><span class="toc-text">二、hexo初始化及本地测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、主题下载及配置"><span class="toc-text">三、主题下载及配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、cdn设置及图片上传"><span class="toc-text">四、cdn设置及图片上传</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、修改模板写文章"><span class="toc-text">五、修改模板写文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、其他"><span class="toc-text">六、其他</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -840,138 +840,468 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="HCL配置-二-–VLAN间通信"><a href="#HCL配置-二-–VLAN间通信" class="headerlink" title="HCL配置(二)–VLAN间通信"></a><font color="red">HCL配置(二)–VLAN间通信</font></h1><h2 id="一、任务"><a href="#一、任务" class="headerlink" title="一、任务"></a><font color="orange">一、任务</font></h2><blockquote>
-<p>Vlan间通信：<br>VLAN10、20、30、40内的主机之间互ping成功</p>
-</blockquote>
-<h2 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a><font color="orange">二、配置</font></h2><h3 id="一-通过三层交换机使用SVI实现通信"><a href="#一-通过三层交换机使用SVI实现通信" class="headerlink" title="(一)通过三层交换机使用SVI实现通信"></a><font color="pink">(一)通过三层交换机使用SVI实现通信</font></h3><p>拓扑图如下：</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL2/pic1.png" alt="拓扑"></p>
-<p>主机IP：</p>
+        <p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/5jhfSfMOicc9iaSeQmV5buk4JeLuqkHLHib0G125ibehQhg3JJGaeB9icOsnfZp5V4PAElXmI4pF9Wza8TvtepVjqDA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="img"></p>
+<p>在家里呆着，看电视也无聊了吧</p>
+<p>那么来学点好玩的呗</p>
+<p>首先来看下搭建完的博客的效果吧</p>
+<p>可自己前往查看：<a href="https://sakura.wallleap.cn" target="_blank" rel="noopener">wallleap</a></p>
+<p>当然啦，还是放在GitHub的比较稳定一点：<a href="https://wallleap.cn">wallleap</a></p>
+<p>自己欣赏不想看我写的这段可以跳过这一段     <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/ca3mOxJibCCXoicc4o48PcdqZ05SuicgWeUgGADibZNhRMILDvs9fuPOxgzkqE0A1sueLlKIFPKNuFcX2MG7BeribYw/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">     </p>
+<p>首先展示一下首页</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbXmho1M6cibicGoFshJsLYoR38mK6AP2nxO3XIpvpkicXPSPXEtIYSCnCQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbGPq4A8iavrpAVC01h3ryia6NnpibRd9RBHmapn6Wo0O0Tp3RhB5LGogPA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicby9Uyw65zOB9lNb0Wst6GLXVbWqNOjasoM5w0PaicuCyibs1iaw8pYoRlA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>​    以上三图都是首页中的</p>
+<p>​    最上面是一张首页轮播图片，图片中间显示头像和社交图标</p>
+<p>​    将光标移到上方或者往下滑，隐藏的导航栏就会显现出来</p>
+<p>​    下面就包括通知、三个图片链接以及显示的部分文章</p>
+<p>​     最底下则是一些网页相关的信息</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbMNCbzM8QSkJw0pnWKnBnxbicEenGzqCjDA51E2E5a0wOxfzsw7wsFGw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbzO6yqxayrWMvb6pdIoibciaZkwiadsiayMuEyialJdBjUZXW9WhbNkGaqLA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbiaJtsUMaes6VbG4OBeAwedPdEVCOLo5e8AQpQcNNjsjuX4ggnbvyVqw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>​    菜单栏最左边的是网站名称</p>
+<p>​    中间是一些导航菜单链接，点击可前往相关页面</p>
+<p>​    最右边是搜索按钮，点击可以搜索文章</p>
+<p>​    归档、清单下面有二级菜单，主要是后面的分类、标签中的几种</p>
+<p>​    点击归档前往归档页面，文章按时间线排序</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbWFibhS9iccqC28B8gHHLoAibNQOh7kAKmicKAUYgFro6f3PBFSW1RfjNicQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbQNLKnNawrHnXTOO0ECMWtmqAezjk3l34GVAS6Q9UkDKA6jVyrUEdQw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>​    标签、分类页还是挺好看的嘿</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbYrrxjoZp1p1RkpFsbc1hcialDqDQqXVdIb06UVlm1Vb80xpGBFkAvzQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>留言板页面可以留言的</p>
+<p>接下来的几个页面就不介绍了</p>
+<p>​      跳过的可以在这里停下来了      <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/ca3mOxJibCCXoicc4o48PcdqZ05SuicgWeUgGADibZNhRMILDvs9fuPOxgzkqE0A1sueLlKIFPKNuFcX2MG7BeribYw/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">     </p>
+<p>接下来就教大家怎么搭建属于自己的免费的博客吧</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/TN05MmJLxMrlU7icJguGC4D6q0lvcvo6vcAfPx7mOTsR6OtfXvLmvnlQPV0dR15lmfXmiaSvyMW6IXCaqD6d31gQ/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="1431316508611068815.jpg"></p>
+<h2 id="一、软件安装及Github配置"><a href="#一、软件安装及Github配置" class="headerlink" title="一、软件安装及Github配置"></a>一、软件安装及Github配置</h2><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/6aVaON9Kibf7cRt3sSjPCZnYOUcIZ1dqz7tO0UYej8SkZRNp4YcL46Z2oP6WyxjcSVVnhOsQRpxicjrZrkDsxhcg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img"></p>
+<p>首先我们需要安装两个软件：Git和Node.js</p>
+<p>提供一下下载链接：</p>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a></p>
+<p><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">Node.js</a></p>
+<p>根据自己的系统选择版本，下载安装</p>
+<p>这里就不详细演示了</p>
+<p>两个都安装好之后可以打开终端或者命令提示符(Mac按Command+空格后输入terminal打开终端、Linux按Ctrl+Alt+T打开终端、Windows系统按WIN+R键打开命令提示符)</p>
+<p>输入命令</p>
+<pre><code>npm -v</code></pre><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbviax2Q2HxnaeOcMlGghGAia037Y0DxZiaou8ZIZU6JPlibr8rdIS1p5EsA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<pre><code>git --version</code></pre><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbbI4no89cX6FWGtJ4omiaaoAiaI9eXSePnDibJwqAZZprPfKN1lic4ZyJnw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>能显示出版本号说明node、git已经安装成功了</p>
+<p>接下来注册好Github账号及完成相关配置</p>
+<p>前往<a href="https://github.com" target="_blank" rel="noopener">Github官网</a></p>
+<p>Sign up页面输入相关信息(第一个是用户名，登录的时候用的；第二个是邮箱，用于接收验证码和登录；第三个是密码，输个自己记得住的)，没有错误之后点击Sign up for GitHub，注册账号</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbDnlK7RJiaJ1fN2W0g5pgNEMl6uDSAWia3U29o50q9BBibxz6zLgeMqicXg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>接着点击右上角头像，点击Your repositories</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbJibggs1SxfWib4tTiaW53sibyyZ2xibRhhoYJo4Ta6CibibyibHPrR55UIWN0w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>到达仓库(repositories)界面，点击New</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbYzMDPnU31cJCgBhJOe4eIGuymyeibupgLsDMasbYMUgADKEMkyrIbpg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>为了不单独购买域名，花额外的钱，咱按照下面操作</p>
+<p>前面是用户名，仓库名设置为用户名.github.io，点击Create repository，创建仓库(仓库名不这样设置也行，但现在还是推荐这样设置)</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbv3uGtV3ugSekyVtBJ5nd42M0JFxNuQ0fJHnCfPE2Y22yiagnCIZzcEQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>接着进入如下页面，左边的暂时不用管，直接点击头像</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbk55HlThDPByQDGCDljlj6rw3Q0CibHuphMWS02LUUiaRtrlxUjxzs23A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>点击Settings</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbT4Uw3axpCvDBjlWVj1ImNZ8F31libV6FASfG7oBia8S3Iibq6SHqtNXWQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>点击左侧导航栏中SSH and GPG keys</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbia8YyjI2VuQpANxVXWIKx5ENic55V0sPJ19Al9pBKUj4Q3icTgNqaQSbA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>接着打开终端或者命令提示符</p>
+<p>分别输入下列命令</p>
+<pre><code>git config --global user.name &quot;你的用户名&quot;
+
+git config --global user.email &quot;你的邮箱地址&quot; 
+
+ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;   #需要回车4次左右</code></pre><p>进入.ssh目录(Mac、Linux的在~/.ssh下，Windows在C:\Users\用户名.ssh)，打开id_rsa.pub，把里面的内容复制出来</p>
+<p>回到网页，单击New SSH key</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
+<p>Title随意填，将刚复制的内容粘贴到Key的文本框中，点击Add SSH key</p>
+<p>接着在终端或者cmd窗口输入命令</p>
+<pre><code>ssh -T git@github.com</code></pre><p>显示如下字样，说明连接成功</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbMibr6KmB91qVZbw4JbOwMFG2RAicxdjTvUumZFaTFSyicdGbZ1ABBbeeg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<h2 id="二、hexo初始化及本地测试"><a href="#二、hexo初始化及本地测试" class="headerlink" title="二、hexo初始化及本地测试"></a>二、hexo初始化及本地测试</h2><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/6aVaON9Kibf7cRt3sSjPCZnYOUcIZ1dqz7tO0UYej8SkZRNp4YcL46Z2oP6WyxjcSVVnhOsQRpxicjrZrkDsxhcg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img"></p>
+<p>接下来可以使用npm安装Hexo了 </p>
+<pre><code>npm install -g hexo-cli</code></pre><p>如果报的不是关键性错误，可以跳过不管，直接下一步(Mac、Linux可以加上sudo)</p>
+<p>进入/home/用户名目录或者磁盘根目录</p>
+<p>|Mac、Linux终端下输入cd ~</p>
+<p>|Windows比如在E盘，在cmd窗口中输入E:回车</p>
+<p>初始化博客目录输入命令</p>
+<pre><code>hexo init MyBlog</code></pre><p>接着等待下载博客的相关文件到MyBlog</p>
+<p>我们再到终端或cmd进入该目录cd MyBlog</p>
+<p>接着输入下面的命令生成静态页面</p>
+<pre><code>hexo generate   (或 hexo g)</code></pre><p>打开hexo本地服务进行测试</p>
+<pre><code>hexo server   (或 hexo s)</code></pre><p>接着用浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+<p>能够看到下方页面说明博客已经搭建成功了</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbnXXgexQCR0yCwo6ibTY2SSTpicTzic0BQOXkOQTxAtkw2icmOUKWINL14Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>但这只是默认的主题、配置，我们还需要把这些东西修改成自己的</p>
+<h2 id="三、主题下载及配置"><a href="#三、主题下载及配置" class="headerlink" title="三、主题下载及配置"></a>三、主题下载及配置</h2><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/6aVaON9Kibf7cRt3sSjPCZnYOUcIZ1dqz7tO0UYej8SkZRNp4YcL46Z2oP6WyxjcSVVnhOsQRpxicjrZrkDsxhcg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img"></p>
+<p>到Hexo的主题库中挑选一个主题，地址：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
+<p>我用的主题是Sakura，首先找到主题的仓库地址(或者转到开发者主页，再前往仓库地址)Sakura地址为<a href="https://github.com/honjun/hexo-theme-sakura，将文件克隆到themes目录下：" target="_blank" rel="noopener">https://github.com/honjun/hexo-theme-sakura，将文件克隆到themes目录下：</a></p>
+<pre><code>git clone https://github.com/honjun/hexo-theme-sakura.git themes/Sakura1</code></pre><p>其他的主题克隆到themes下就OK了</p>
+<p>但是Sakura修改的东西有点多，怕你们修改麻烦，开发者直接把所有文件放一起了</p>
+<p>我们直接把themes/Sakura1目录下的除了.git和.gitignore的其他文件剪切出来，粘贴到MyBlog目录下，替换原来的文件</p>
+<p>完成之后输入命令安装依赖(这一步很重要)</p>
+<pre><code>npm install</code></pre><p>接着我们开始修改相关的配置文件(建议使用Sublime Text或者VS code修改)</p>
+<p><strong>修改hexo配置文件</strong>，这个文件是MyBlog/_config.yml(具体可看<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration.html</a>)</p>
+<pre><code># Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site 网站
+title: 标题                  #把这里修改为你的站点名(网站标题)subtitle: &#39;&#39;                #副标题，可不输入
+description: &#39;&#39;             #描述，可以随便写句话描述你的网站keywords:                   #关键词，可不写(写多个时用,隔开 )author: 作者                #作者名
+language: zh-cn             #语言
+timezone: &#39;Asia/Shanghai&#39;   #时区
+# URL  网址
+## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+url: http://用户名.github.io    #站点链接(开启了SSL则要改为https开头)
+root: /                        #网站根目录，如果仓库名设置的是上面的那个则不需修改。如果是其他的(例如blog)请加上那个名称(/blog)，上面那个链接也要加上(/blog)
+permalink: :year/:month/:day/:title/  #文章的链接格式permalink_defaults:
+
+
+# Directory 文件目录，可以不修改source_dir: sourcepublic_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: README.md      #如果你不想让hexo把这篇文章渲染成你设置的布局的html，可以把文件名写在这
+
+# Writing  文章 静态页面生成属性
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:                        #高亮，由于我们使用的Sakura用的自己的高亮，这里改成false
+  enable: false
+  line_number: false
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace:
+
+# Home page setting 主页设置，可不修改
+# path: Root path for your blogs index page. (default = &#39;&#39;)
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: &#39;&#39;
+  per_page: 10
+  order_by: -date
+
+# Category &amp; Tag   分类和标签
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format   日期时间格式
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination  分页
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions  扩展
+## Plugins: https://hexo.io/plugins/   插件
+## Themes: https://hexo.io/themes/     主题
+theme: Sakura      #主题名字，你想换哪个主题，下载到themes目录下之后到这来修改
+
+# Deployment  部署相关
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: 
+    github: git@github.com:用户名/用户名.github.io.git
+    # github: https://github.com/honjun/honjun.github.io.git
+    # coding: https://git.coding.net/hojun/hojun.git
+  branch: master
+
+# backup  备份
+backup:
+  type: git
+  message: backup my blog of https://yourname.github.io/
+  repository:
+    github: http://github.com/用户名/用户名.github.io.git,backup
+    # coding: https://git.coding.net/hojun/hojun.git,backup
+
+#RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: &#39; &#39;
+  order_by: -date</code></pre><p>这里暂时就配置到这里了，但是，这个文件还需要接着修改，我们以后再说</p>
+<p><strong>修改主题配置文件</strong>，这个文件是MyBlog/themes/Sakura_config.yml</p>
+<pre><code># site name 
+prefixName: 前缀名         #红框部分
+siteName: 网站名           #绿框部分</code></pre><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHSx8lNldTYibhNgxZ6IVEbicbeiaJcuANsia7XyFCE726EyF3JZ2CJacSnpico0JXdyavPZMPED5lueJcg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<pre><code># favicon and site master avatar
+favicon: /images/favicon.ico     #自己到MyBlog\themes\Sakura\source\images下替换为自己的
+avatar: /img/custom/avatar.jpg   #头像等下弄
+url: http://用户名.github.io      #网站链接
+description: Live your life with passion! With some drive! #描述自己
+cdn: https://cdn.jsdelivr.net/gh/用户名/cdn@latest        #暂时先这样写着，等下讲
+pjax: 1                           #开启pjax，不修改
+# 1开启
+mathjax: 1                        #开启数学公式渲染
+
+notice: hexo-Sakura主题已经开源，目前正在开发中...  #公告通知，自己写
+lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+#上面这个是图片懒加载，可以不修改，就直接借用作者cdn地址
+
+menus:  #下面是导航栏的内容 path是路径  fa是图标，图标可以自己前往查看，直接把名字复制过来就行，地址：http://fontawesome.dashgame.com/
+  首页: { path: /, fa: fa-fort-awesome faa-shake }     #首页不修改
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: {  #这个是归档页，不修改 后面的都是归档下的二级菜单
+    技术: {path: /categories/技术/, fa: fa-code },            #categories是分类，所以如果你需要这些页面能使用，需要有这种分类的文章
+    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
+    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
+    随想: {path: /categories/随想/, fa: fa-commenting-o },
+    转载: {path: /categories/转载/, fa: fa-book }
+  } }
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce },    #tags是标签，所以如果你需要这些页面能使用，需要有这种标签的文章
+    番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
+    歌单: {path: /music/, fa: fa-headphones },
+    图集: {path: /tags/图集/, fa: fa-photo }
+  } }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links/, fa: fa-link faa-shake }
+  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /about/, fa: fa-meetup}, 
+    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
+    Lab: {path: /lab/, fa: fa-cogs },
+  } }
+#  客户端: { path: /client/, fa: fa-android faa-vertical } #这个不需要可以直接注释或者删除
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
+
+# 主页文章排序方式: -1: 新文章在前，1: 旧文章在前.
+homePageSortType: -1
+# 主页文章显示数量
+homeArticleShown: 10
+# 背景图片 更好的修改(以后可以修改成自己的)--就是最开始出现的那个大图片
+bg:
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp
+  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点</code></pre><pre><code># startdash url, title, desc img
+startdash: 
+  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
+  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}</code></pre><p>就是主页的通知下面那三个图片</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJXDTVvicc4EOKun4Zuy9jsJ8PTpkVeR0ryZDDxvbDSgldXhWBeUAVv4A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<pre><code># 建站时间，比如你是今天(2020年2月8日)搭建的这个博客则可以写为：
+siteBuildingTime: 02/08/2020
+
+#social  url, img PC端配置  主页的社交图标--PC端可以看见，修改成自己的链接
+social:
+  github: {url: http://github.com/honjun, img: /img/social/github.png}
+  sina: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/sina.png}
+  wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
+  zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
+  email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
+  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+
+#social  url, img 移动端配置  手机端的
+msocial:
+  github: {url: http://github.com/honjun, fa: fa-github, color: 333}
+  weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
+  qq: {url: https://wpa.qq.com/msgrd?v=3&amp;uin=954655431&amp;site=qq&amp;menu=yes, fa: fa-qq, color: 25c6fe}</code></pre><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJjBYFRZgTlloeVVLVC8iceEg81GhNvMYmCb4lHUOCIG63Pavg98gKNDw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJP9rxtX76TR3VyHkyojpTtU0p2kPs7VzaM0kST3whUYytjUKl8unJ7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<pre><code>#捐赠页面的
+donate:
+  paypal: https://www.paypal.me/hojuncn  #自己到PayPal注册账号，修改链接为自己的
+  alipay: /img/custom/donate/AliPayQR.jpg  #下面这三个图片等下加上
+  wechat: /img/custom/donate/WeChanQR.jpg
+  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+
+#首页视频不修改
+# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+movies:
+  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: Unbroken.mp4
+
+
+#音乐
+aplayer: 
+  id: 2660651585      
+  server: netease     
+  type: playlist
+  fixed: true
+  autoplay: false     #进入网页自动播放音乐，false不自动播放，true自动播放
+  loop: all           #循环播放
+  order: random
+  preload: auto
+  volume: 0.7         #声音大小
+  mutex: true</code></pre><p>这个音乐的要讲下</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJ4LRbxGWSh8W1ia16TtKAfWYy3yuJEiciadPspUiagvdEkQVtSVcMknQerw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>就是左下角的这个音乐播放器</p>
+<p>我们主要改的就是id和server</p>
+<p>server使用的网易云的时候，我们进入网页版的网易云，进入你自己的歌单，看上面链接的最后几位数字，填到id那里就行</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJBdGibG3uia5Fv7RWfaUxB4abrsvQx60MqzYIdWqHHI9n1zdYN2ggqMkw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<pre><code># Valine 评论模块
+valine: true
+v_appId:                            #填写AppID
+v_appKey:                           #填写AppKey</code></pre><p>评论模块主要用在留言板、友链和文章下方，是非常重要的功能</p>
+<p>Valine具体内容可以看这个 <a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener">https://valine.js.org/quickstart.html</a></p>
+<p>我们先进入leancloud注册的页面，注册一个账号<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="noopener">https://leancloud.cn/dashboard/login.html#/signup</a></p>
+<p>登录进入之后创建一个应用，名字随便填</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJGSdPlqcKJImD3HbySkwBRTxDFLibicXjV72zibph6hbpqyJAeHGu7ibiawA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>紧接着点击那个应用的设置按钮</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJJXGA6HJLMo8V0sYmlGO62gG7xJbRXC9lZCW6CicNAfiaSRlJgAQ6EOYQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>进入设置页面后，点击安全中心，在框中输入链接：http://用户名.github.io</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJibiasN3CuUqJdDtz8msZaLnh2icmgialwUe7wqhhibPsqgkerA6XNRtARlQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>输入后点击保存，接下来点击应用keys</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJXmVK3d0qS1jxVvRf9JSk4jic95pFCbXd7VbazvgjfP8RK7ccBRWGmJw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>接着分别把图示位置的两个值填到相应位置</p>
+<p>评论的差不多就弄好了</p>
+<h2 id="四、cdn设置及图片上传"><a href="#四、cdn设置及图片上传" class="headerlink" title="四、cdn设置及图片上传"></a>四、cdn设置及图片上传</h2><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/6aVaON9Kibf7cRt3sSjPCZnYOUcIZ1dqz7tO0UYej8SkZRNp4YcL46Z2oP6WyxjcSVVnhOsQRpxicjrZrkDsxhcg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img"></p>
+<p>​    我们这里需要用到GitHub，浏览器输入<a href="https://github.com进入网页" target="_blank" rel="noopener">https://github.com进入网页</a></p>
+<p>新建一个仓库，名字为cdn，勾上初始化复选框，点击Create repository</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJ4bREMf5JtsSE7spnMEhJichFBWYnbj4k1SvCkFwuJIZg07nlgBsJ1Dw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>​    紧接着我们进入该仓库点击Clone or download，点击箭头所指处，复制该地址</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJicEj5cbJ7jsmsMV2tncDibHDKZ5iaYXPtWnicwYZFuFa66k6mYEI804Zeg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>到终端(命令行)输入</p>
+<pre><code>git clone https://github.com/用户名/cdn.git</code></pre><p>即git clone加上你复制的链接</p>
+<p>这个可以克隆到你喜欢的位置(但别放到MyBlog下)</p>
+<p>在下载下来的cdn目录下新建三个文件夹，分别是img、js、css</p>
+<p>（当然了，要是觉得麻烦，可以把开发者的cdn克隆下来，再把文件复制到你的cdn目录中）</p>
+<p>我们把头像、首页图片、赞赏图片等放到相应的位置去</p>
+<p>接着修改README.md文件内容为</p>
+<pre><code># cdn
+
+我的图床地址
+https://cdn.jsdelivr.net/gh/用户名/cdn@latest/
+
+上传命令
+```
+git add . &amp;&amp; git commit -m &quot;update&quot; &amp;&amp; git push -f
+```
+</code></pre><p>方便我们后面使用</p>
+<p>接着我们使用上面的那个上传命令，update可改为其他，eg:</p>
+<pre><code>git add . &amp;&amp; git commit -m &quot;第一次上传&quot; &amp;&amp; git push -f</code></pre><p>如果是第一次使用GitHub，那么可能会提示输入自己的GitHub用户名和密码</p>
+<p>接下来我们就可以直接调用里面的图片、js、css等资源了</p>
+<p>所用到的是<a href="https://www.jsdelivr.com/?docs=gh提供的" target="_blank" rel="noopener">https://www.jsdelivr.com/?docs=gh提供的</a></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJflsTejRcNWM8q9RLj1nBvbm20YZaJFcRHtAaagA7flU7t19z75O4bQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>不过我们一般只使用一条就行</p>
+<p>比如在cdn下的img下的avatar.png文件，链接是</p>
+<p><a href="https://cdn.jsdelivr.net/gh/用户名/cdn@latest/img/avatar.png" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/用户名/cdn@latest/img/avatar.png</a></p>
+<p>再比如我的某篇文章的插图cdn/img/pic/wlu/1572956839709.png</p>
+<p><a href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/wlu/1572956839709.png" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/wlu/1572956839709.png</a></p>
+<p>以后我们每次想添加图片就复制到img目录下，接着使用上传命令，再用下面的链接使用那个图片</p>
+<h2 id="五、修改模板写文章"><a href="#五、修改模板写文章" class="headerlink" title="五、修改模板写文章"></a>五、修改模板写文章</h2><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/6aVaON9Kibf7cRt3sSjPCZnYOUcIZ1dqz7tO0UYej8SkZRNp4YcL46Z2oP6WyxjcSVVnhOsQRpxicjrZrkDsxhcg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img"></p>
+<p>文章模板是MyBlog/scaffolds/post.md</p>
+<p>我改的是</p>
+<pre><code>---
+title: {{ title }}
+date: {{ date }}
+author: luwang
+avatar: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/custom/avatar.jpg
+authorLink: wallleap.cn
+authorAbout: 关于我
+authorDesc: 描述我
+categories: 
+    - c1
+    - c2
+comments: true
+tags: 
+    - tag1
+    - tag2
+keywords: 
+description: 
+photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
+---
+我们的文章写在这里</code></pre><p>我们新建文章可以用命令：</p>
+<pre><code>hexo new &quot;文章名&quot;</code></pre><p>接着将会在MyBlog/source/_posts目录下生成文章名.md文件</p>
+<p>我们写文章修改这个文件即可，上面的模板将会在新文件中自动生成</p>
+<p>需要了解markdown语法，可以到这里面去看下</p>
+<p><a href="http://markdown.xiaoshujiang.com/" target="_blank" rel="noopener">http://markdown.xiaoshujiang.com/</a></p>
+<p>不过写文章我们也不需要了解太深，慢慢写着就都会用了</p>
+<p>这里给出一些基本的</p>
+<pre><code># 标题一
+## 二级标题
+### 三级标题 一般到这就行了
+
+&gt; 引用 注意空格
+
+- 列表  还可以用+或*
+- 1
+- 2
+
+[链接名字](链接地址)
+
+![图片名字](图片地址)</code></pre><pre><code>**这是文字粗体格式**
+__这是文字粗体格式__
+*这是文字斜体格式*
+_这是文字斜体格式_</code></pre><pre><code>`单行代码，这个是在Esc下方这个按键`
+
+​```语言
+名块代码
+```
+
+~~删除线~~</code></pre><pre><code>分割线
+---
+
+***
+
++++
+
+这三个都可以</code></pre><p>就讲这些，其他的自己看看吧</p>
+<p>对了，作者还集成了插件hexo-tag-bili和hexo-tag-fancybox_img，可以用来插入B站的视频和图片到文章中</p>
+<pre><code>{% bili video_id [page] %}</code></pre><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQvHCe9pFoDQ6PvZogBK7kJOgaukdiaL3lbMflPDaVk7hSjNFDDBt4PaiaAu4PArowNiboUCqQTRViamw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
 <ul>
-<li><code>PC1：　192.168.10.100/24</code></li>
-<li><code>PC2：　192.168.20.100/24</code></li>
-<li><code>PC3：　192.168.30.100/24</code></li>
-<li><code>PC4：　192.168.40.100/24</code></li>
+<li><pre><code>{% fb_img src [caption] %}</code></pre></li>
 </ul>
-<p>VLANIP规划：</p>
-<ul>
-<li><code>VLAN10：　192.168.10.1/24</code></li>
-<li><code>VLAN20：　192.168.20.1/24</code></li>
-<li><code>VLAN30：　192.168.30.1/24</code></li>
-<li><code>VLAN40：　192.168.40.1/24</code></li>
-</ul>
-<h4 id="1、配置PC"><a href="#1、配置PC" class="headerlink" title="1、配置PC"></a>1、配置PC</h4><p>配置好IP地址，掩码，网关（网关是VLAN的IP）</p>
-<h4 id="2、最上面的交换机S0"><a href="#2、最上面的交换机S0" class="headerlink" title="2、最上面的交换机S0"></a>2、最上面的交换机S0</h4><blockquote>
-<p>命名</p>
-</blockquote>
-<pre><code>&lt;H3C&gt;sys
-System View: return to User View with Ctrl+Z.
-[H3C]sys LWS0</code></pre><blockquote>
-<p>创建四个vlan</p>
-</blockquote>
-<pre><code>[LWS0]vlan 10
-[LWS0-vlan10]quit
-[LWS0]vlan 20
-[LWS0-vlan20]vlan 30
-[LWS0-vlan30]vlan 40
-[LWS0-vlan40]quit</code></pre><blockquote>
-<p>给vlan分配IP</p>
-</blockquote>
-<pre><code>[LWS0]int vlan 10
-[LWS0-Vlan-interface10]ip add 192.168.10.1 255.255.255.0
-[LWS0-Vlan-interface10]quit
-[LWS0]int vlan 20
-[LWS0-Vlan-interface20]ip add 192.168.20.1 255.255.255.0
-[LWS0-Vlan-interface20]int vlan 30
-[LWS0-Vlan-interface30]ip add 192.168.30.1 255.255.255.0
-[LWS0-Vlan-interface30]int vlan 40
-[LWS0-Vlan-interface40]ip add 192.168.40.1 255.255.255.0
-[LWS0-Vlan-interface40]quit</code></pre><blockquote>
-<p>接口设为trunk并允许所有vlan通过</p>
-</blockquote>
-<pre><code>[LWS0]int g1/0/1
-[LWS0-GigabitEthernet1/0/1]port link-type trunk
-[LWS0-GigabitEthernet1/0/1]port trunk permit vlan all
-[LWS0-GigabitEthernet1/0/1]no sh
-[LWS0-GigabitEthernet1/0/1]int g1/0/2
-[LWS0-GigabitEthernet1/0/2]no sh
-[LWS0-GigabitEthernet1/0/2]port link-ty t
-[LWS0-GigabitEthernet1/0/2]port t p vlan all</code></pre><h4 id="3、左边交换机S1"><a href="#3、左边交换机S1" class="headerlink" title="3、左边交换机S1"></a>3、左边交换机S1</h4><blockquote>
-<p>命名</p>
-</blockquote>
-<pre><code>&lt;H3C&gt;sys
-System View: return to User View with Ctrl+Z.
-[H3C]sys LWS1
-创建vlan
-[LWS1]vlan 10
-[LWS1-vlan10]vlan 20
-[LWS1-vlan20]quit</code></pre><blockquote>
-<p>与交换机相连的接口设为trunk，允许所有vlan通过</p>
-</blockquote>
-<pre><code>[LWS1-GigabitEthernet1/0/1]no sh
-[LWS1-GigabitEthernet1/0/1]port link-ty t
-[LWS1-GigabitEthernet1/0/1]port t p vlan all
-[LWS1-GigabitEthernet1/0/1]quit</code></pre><blockquote>
-<p>下面两个接口设为access</p>
-</blockquote>
-<pre><code>[LWS1]int g1/0/2
-[LWS1-GigabitEthernet1/0/2]port link-ty a
-[LWS1-GigabitEthernet1/0/2]port a vlan 10
-[LWS1-GigabitEthernet1/0/2]int g1/0/3
-[LWS1-GigabitEthernet1/0/3]no sh
-[LWS1-GigabitEthernet1/0/3]port link-ty a
-[LWS1-GigabitEthernet1/0/3]port a vlan 20
-[LWS1-GigabitEthernet1/0/3]quit</code></pre><h4 id="4、右边交换机S2"><a href="#4、右边交换机S2" class="headerlink" title="4、右边交换机S2"></a>4、右边交换机S2</h4><pre><code>[LWS2]vlan 30
-[LWS2-vlan30]vlan 40
-[LWS2-vlan40]quit
-[LWS2]int g1/0/1
-[LWS2-GigabitEthernet1/0/1]port link-ty t
-[LWS2-GigabitEthernet1/0/1]port t p vlan all
-[LWS2-GigabitEthernet1/0/1]quit
-[LWS2]int g1/0/2
-[LWS2-GigabitEthernet1/0/2]port link-ty a
-[LWS2-GigabitEthernet1/0/2]port a vlan 30
-[LWS2-GigabitEthernet1/0/2]int g1/0/3
-[LWS2-GigabitEthernet1/0/3]port link-ty a
-[LWS2-GigabitEthernet1/0/3]port a vlan 40
-[LWS2-GigabitEthernet1/0/3]quit</code></pre><h4 id="5、测试"><a href="#5、测试" class="headerlink" title="5、测试"></a>5、测试</h4><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL2/pic2.png" alt=""></p>
-<h3 id="二-其他方法"><a href="#二-其他方法" class="headerlink" title="(二)其他方法"></a><font color="pink">(二)其他方法</font></h3><p>其他的网上有详细的配置，因此只给出方法</p>
-<p>1、如果只有两个VLAN，那么可以在交换机端口设置trunk的本征VLAN，自行去标签</p>
-<p>多个VLAN的话设成Hybrid口，用untag撕去标签</p>
-<p>2、通过路由接口</p>
-<p>3、通过单臂路由</p>
-<hr>
-<p> <strong>文章汇总：</strong></p>
-<table><tr><td bgcolor=#FFFF00> HCL的安装和使用</td></tr></table>
+<p>这个就比如</p>
+<a href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/wlu/1572956839709.png" target="_blank" rel="noopener" data-fancybox="images" data-caption="主人没有描述我哦~"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/wlu/1572956839709.png" /></a>
 
-<p><kbd><a href="/2019/09/09/web-HCL0/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#D1EEEE>ping通及Telnet</td></tr></table>
+<p>将会显示一张图片</p>
+<p>文章写好之后我们使用命令：</p>
+<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)</p>
+<pre><code>hexo clean</code></pre><p>生成静态页面</p>
+<pre><code>hexo generate （或者hexo g）</code></pre><p>本地测试</p>
+<pre><code>hexo server   （或者hexo s）</code></pre><p>测试没问题后使用下面命令部署网站，把生成的静态网页上传到仓库</p>
+<pre><code>hexo deploy  （或者hexo d）</code></pre><p>接着就可以访问http://用户名.github.io访问你的博客了</p>
+<h2 id="六、其他"><a href="#六、其他" class="headerlink" title="六、其他"></a>六、其他</h2><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/c6gqmhWiafypv3Qib1OB9L9c0Jibsvavr0e5dia8pBSgicgmicOSPRA0FZic0G2QnJZlaXVsfs8etg5xUJgdbQGciaNKeg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img">)<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_gif/6aVaON9Kibf7cRt3sSjPCZnYOUcIZ1dqz7tO0UYej8SkZRNp4YcL46Z2oP6WyxjcSVVnhOsQRpxicjrZrkDsxhcg/640?tp=webp&wxfrom=5&wx_lazy=1" alt="img"></p>
+<p>到上面那样基本上就Ok了</p>
+<p>下面讲一点其他的</p>
+<p>这个是新建页面的命令</p>
+<pre><code>hexo new page 页面名
 
-<p><kbd><a href="/2019/09/09/web-HCL1/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#C0FF3E>VLAN间通信</td></tr></table>
+hexo new page tags    #开启标签页
 
-<p><kbd><a href="/2019/09/11/web-HCL2/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#54FF9F>DHCP配置</td></tr></table>
+hexo new page about    #开启“关于”页
 
-<p><kbd><a href="/2019/09/12/web-HCL3/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#EFFF00> DHCP中继</td></tr></table>
+hexo new page categories #分类
 
-<p><kbd><a href="/2019/09/18/web-HCL4/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#DFEEEE>STP及VRRP配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/18/web-HCL5/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#C0FFFE>RIP配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/19/web-HCL6/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#54FFEF>OSPF配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/27/web-HCL7/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#0FFF00>ACL+NAT配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/27/web-HCL8/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#F1EEEE>使用eNSP搭建企业网络</td></tr></table>
-
-<p><kbd><a href="/2019/09/30/web-HCL9/index.html">go-></a></kbd></p>
-<hr>
+hexo new page 404     #404</code></pre><p>还有安装插件的命令</p>
+<p>到插件库<a href="https://hexo.io/plugins/找插件" target="_blank" rel="noopener">https://hexo.io/plugins/找插件</a></p>
+<p>安装插件‍</p>
+<pre><code>npm install 插件名 --save</code></pre><p>剩下的就剩下博客美化和写文章了</p>
+<p>博客美化的下次出教程吧</p>
+<p>努力写文章，慢慢充实你的博客吧</p>
+<p>明天文章见</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/c6gqmhWiafypu8xMx0VGdz69F9YhVguXuME1NXHKBJvbXrGQUqA33gM6papce4MI1p7licuSL2uPbw5oXkA0YXWQ/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p>扫描关注</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/b96CibCt70iaaBAicDNCSs6H0O0SBGSALfnVxyC9rvlHbVYon4PJk1PglmRs7SFeU1wepp2gASkMMw67MFQh8qaHg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHSZHfpM4MH526RpdFYxnfLLN4Iytx5TlvBsnnicFwAPWARF4tgp8nRQUSIsiaBI13V4pPbgV9icCiauwg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="undefined"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 15579576761@163.com </span>
@@ -985,12 +1315,12 @@ System View: return to User View with Ctrl+Z.
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>HCL配置(二)--VLAN间通信</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">711</span></p>
+    <p><span class="copy-title">文章标题:</span>闲着也是闲着，不如搭个免费的博客玩玩</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">4.5k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-11, 18:06:05</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-24, 12:49:59</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/11/web-HCL2/" title="HCL配置(二)--VLAN间通信">https://wallleap.cn/2019/09/11/web-HCL2/</a>
+    <p><span class="copy-title">发布时间:</span>2020-02-08, 21:34:47</p>
+    <p><span class="copy-title">最后更新:</span>2020-02-29, 22:22:34</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/08/hexo-blog/" title="闲着也是闲着，不如搭个免费的博客玩玩">https://wallleap.cn/2020/02/08/hexo-blog/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -1005,7 +1335,7 @@ System View: return to User View with Ctrl+Z.
 
 <script>
     var gitment = new Gitment({
-        id: 'https://wallleap.cn/2019/09/11/web-HCL2/', // 可选。默认为 location.href
+        id: 'https://wallleap.cn/2020/02/08/hexo-blog/', // 可选。默认为 location.href
         owner: 'wallleap',
         repo: 'wallleap.github.io',
         oauth: {
