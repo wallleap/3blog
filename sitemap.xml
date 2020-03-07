@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wallleap.cn/2020/03/07/mindmaptest/</loc>
+    
+    <lastmod>2020-03-07T06:55:55.962Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wallleap.cn/about/index.html</loc>
+    
+    <lastmod>2020-03-07T06:37:57.669Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wallleap.cn/links/index.html</loc>
+    
+    <lastmod>2020-03-06T18:20:46.066Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wallleap.cn/2020/02/08/hexo-blog/</loc>
     
     <lastmod>2020-02-29T14:22:34.634Z</lastmod>
@@ -65,6 +86,13 @@
   </url>
   
   <url>
+    <loc>https://wallleap.cn/404.html</loc>
+    
+    <lastmod>2020-02-27T06:04:57.397Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wallleap.cn/2019/09/30/web-HCL9/</loc>
     
     <lastmod>2020-02-24T16:24:27.854Z</lastmod>
@@ -75,13 +103,6 @@
     <loc>https://wallleap.cn/2019/03/14/w650dc-hackintosh/</loc>
     
     <lastmod>2020-02-24T16:24:09.128Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wallleap.cn/about/index.html</loc>
-    
-    <lastmod>2020-02-23T07:04:01.366Z</lastmod>
     
   </url>
   
