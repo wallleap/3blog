@@ -103,7 +103,10 @@ referrer.setAttribute("content", "never");
 </script> -->
 <script>
   const referrer  = document.getElementById("referrer");
-  setTimeout("referrer.setAttribute(‘content’, ‘never’)",5000);
+  setTimeout(function(){
+    referrer.setAttribute("content", "never");
+    alert("图片加载已完成，请手动刷新页面");
+  },5000);
 </script>
 <body>
 <aside class="nav">
@@ -236,6 +239,34 @@ referrer.setAttribute("content", "never");
     
         
             
+            <li><div data-rel="笔记"><i class="fold iconfont icon-right"></i>笔记<small>(11)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="转载">转载<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Hexo">Hexo<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="黑苹果">黑苹果<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="五笔学习">五笔学习<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="编程"><i class="fold iconfont icon-right"></i>编程<small>(2)</small></div>
                 
                     <ul class="sub hide">
@@ -268,34 +299,6 @@ referrer.setAttribute("content", "never");
     
         
             
-            <li><div data-rel="笔记"><i class="fold iconfont icon-right"></i>笔记<small>(11)</small></div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="Hexo">Hexo<small>(8)</small></div>
-                            
-                        </li>
-                            
-                        <li><div data-rel="转载">转载<small>(1)</small></div>
-                            
-                        </li>
-                            
-                        <li><div data-rel="黑苹果">黑苹果<small>(1)</small></div>
-                            
-                        </li>
-                            
-                        <li><div data-rel="五笔学习">五笔学习<small>(1)</small></div>
-                            
-                        </li>
-                            
-                    </ul>
-                
-            </li>
-            
-        
-    
-        
-            
         
     
         
@@ -309,14 +312,6 @@ referrer.setAttribute("content", "never");
                         </li>
                             
                     </ul>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="阅读">阅读<small>(1)</small></div>
                 
             </li>
             
@@ -340,19 +335,23 @@ referrer.setAttribute("content", "never");
     
         
             
+        
+    
+        
+            
             <li><div data-rel="网络"><i class="fold iconfont icon-right"></i>网络<small>(15)</small></div>
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="华三">华三<small>(4)</small></div>
-                            
-                        </li>
-                            
                         <li><div data-rel="HCNA">HCNA<small>(4)</small></div>
                             
                         </li>
                             
                         <li><div data-rel="基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="华三">华三<small>(4)</small></div>
                             
                         </li>
                             
@@ -363,6 +362,10 @@ referrer.setAttribute("content", "never");
         
     
         
+            
+            <li><div data-rel="阅读">阅读<small>(1)</small></div>
+                
+            </li>
             
         
     
@@ -465,7 +468,11 @@ referrer.setAttribute("content", "never");
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a class="color3">技术</a>
+        <a class="color3">考研</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">英语</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -477,15 +484,11 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color3">技术</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">主题</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">考研</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">英语</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -494,10 +497,6 @@ referrer.setAttribute("content", "never");
     
     <li class="article-tag-list-item">
         <a class="color2">Ubuntu</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">悦读</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -517,6 +516,14 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color3">悦读</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">VLAN</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">Hexo</a>
     </li>
     
@@ -530,10 +537,6 @@ referrer.setAttribute("content", "never");
     
     <li class="article-tag-list-item">
         <a class="color3">博客</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">VLAN</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -565,15 +568,15 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color3">安装</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">实验</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color3">配置</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">安装</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -589,15 +592,7 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">企业网</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">OSPF</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">五笔</a>
+        <a class="color1">微信防盗链</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -609,7 +604,15 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color1">微信防盗链</a>
+        <a class="color5">OSPF</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">五笔</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">企业网</a>
     </li>
     
     <div class="clearfix"></div>
@@ -840,7 +843,7 @@ referrer.setAttribute("content", "never");
         
         <a  class="编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="技术,数据结构,C/C++"
+           data-tag="数据结构,C/C++,技术"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1231,7 +1234,7 @@ $(function () {
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#技术','#数据结构','#C/C++','#主题','#考研','#英语','#Win10','#Ubuntu','#悦读','#逆水寒','#图集','#HCNA','#eNSP','#Hexo','#Sakura','#Blog','#博客','#VLAN','#GitHub','#交换机','#w650dc','#hackintosh','#黑苹果','#HCL','#华三','#实验','#配置','#安装','#eNsp','#STP','#RIP','#企业网','#OSPF','#五笔','#ACL','#NAT','#微信防盗链',],
+            'data': ['#考研','#英语','#数据结构','#C/C++','#技术','#主题','#Win10','#Ubuntu','#逆水寒','#图集','#HCNA','#eNSP','#悦读','#VLAN','#Hexo','#Sakura','#Blog','#博客','#GitHub','#交换机','#w650dc','#hackintosh','#黑苹果','#HCL','#华三','#安装','#实验','#配置','#eNsp','#STP','#RIP','#微信防盗链','#ACL','#NAT','#OSPF','#五笔','#企业网',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

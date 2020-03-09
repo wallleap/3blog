@@ -74,7 +74,7 @@
       <link href="/2020/03/07/wechat-pic/"/>
       <url>/2020/03/07/wechat-pic/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>知道微信可以利用Markdown Here插件使用Markdown语法写文章之后。</p><p>就一直是先在微信发布文章之后再copy到博客上。</p><p>因为图片可以放到微信上，不需要再上传到自己图床上了。</p><p>但是有一个问题，就是由于微信公众号图片防盗链机制，会让图片不正常显示。</p><p>看了这两篇文章：</p><p><a href="https://blog.p2hp.com/archives/5931" target="_blank" rel="noopener">微信图片防盗链“此图片来自微信公众平台 未经允许不得引用”的解决方案</a></p><p><a href="https://juejin.im/post/5d074ee46fb9a07ede0b435d" target="_blank" rel="noopener">前端解决第三方图片防盗链的办法 - html referrer 访问图片资源 403 问题</a></p><p>直接借用了第二篇文章的方法</p><p>在head中加入了</p><meta id="referrer" name="referrer" content="always" /><script>const referrer  = document.getElementById("referrer");setTimeout("referrer.setAttribute("content", "never")",5000);</script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>知道微信可以利用Markdown Here插件使用Markdown语法写文章之后。</p><p>就一直是先在微信发布文章之后再copy到博客上。</p><p>因为图片可以放到微信上，不需要再上传到自己图床上了。</p><p>但是有一个问题，就是由于微信公众号图片防盗链机制，会让图片不正常显示。</p><p>看了这两篇文章：</p><p><a href="https://blog.p2hp.com/archives/5931" target="_blank" rel="noopener">微信图片防盗链“此图片来自微信公众平台 未经允许不得引用”的解决方案</a></p><p><a href="https://juejin.im/post/5d074ee46fb9a07ede0b435d" target="_blank" rel="noopener">前端解决第三方图片防盗链的办法 - html referrer 访问图片资源 403 问题</a></p><p>直接借用了第二篇文章的方法</p><p>在head中加入了</p><meta id="referrer" name="referrer" content="always" /><script>  const referrer  = document.getElementById("referrer");  setTimeout(function(){    referrer.setAttribute("content", "never");  },5000);</script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       
       
       <categories>
@@ -770,11 +770,11 @@
       
         <tags>
             
-            <tag> 技术 </tag>
-            
             <tag> 数据结构 </tag>
             
             <tag> C/C++ </tag>
+            
+            <tag> 技术 </tag>
             
         </tags>
       
