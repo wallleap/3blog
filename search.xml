@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>hexo-themes</title>
+      <link href="/2020/03/08/hexo-themes/"/>
+      <url>/2020/03/08/hexo-themes/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo博客如何更换主题，并且进行常用的配置"><a href="#hexo博客如何更换主题，并且进行常用的配置" class="headerlink" title="hexo博客如何更换主题，并且进行常用的配置"></a>hexo博客如何更换主题，并且进行常用的配置</h1><h2 id="五款Hexo主题推荐"><a href="#五款Hexo主题推荐" class="headerlink" title="五款Hexo主题推荐"></a>五款Hexo主题推荐</h2><p>1.Sakura 非常炫，缺点加载慢 <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" rel="noopener">https://github.com/honjun/hexo-theme-sakura</a><br>2.Matery 预加载，强推 <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery</a><br>3.3-hexo 三段式，适合博文多的 <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">https://github.com/yelog/hexo-theme-3-hexo</a><br>4.Butterfly 也是个好看的 <a href="https://github.com/jerryc127/hexo-theme-butterfly/tree/dev" target="_blank" rel="noopener">https://github.com/jerryc127/hexo-theme-butterfly/tree/dev</a><br>5.Next 功能集成多，简洁 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><pre><code class="yml"># Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: landscape          # 修改为自己下载好了的主题名</code></pre><h2 id="Sakura主题"><a href="#Sakura主题" class="headerlink" title="Sakura主题"></a>Sakura主题</h2><p>Png转ico：<a href="https://www.easyicon.net/covert/" target="_blank" rel="noopener">iconvert</a></p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>wechat-pic</title>
+      <link href="/2020/03/07/wechat-pic/"/>
+      <url>/2020/03/07/wechat-pic/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>微信公众号图片防盗链</p><p>知道微信可以利用Markdown Here插件使用Markdown语法写文章之后。</p><p><a href="https://blog.p2hp.com/archives/5931" target="_blank" rel="noopener">微信图片防盗链“此图片来自微信公众平台 未经允许不得引用”的解决方案</a></p><p><a href="https://juejin.im/post/5d074ee46fb9a07ede0b435d" target="_blank" rel="noopener">前端解决第三方图片防盗链的办法 - html referrer 访问图片资源 403 问题</a></p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试思维导图</title>
       <link href="/2020/03/07/mindmaptest/"/>
       <url>/2020/03/07/mindmaptest/</url>

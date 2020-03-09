@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wallleap.cn/2020/03/08/hexo-themes/</loc>
+    <lastmod>2020-03-08</lastmod>
+  </url>  <url>
+    <loc>https://wallleap.cn/2020/03/07/wechat-pic/</loc>
+    <lastmod>2020-03-08</lastmod>
+  </url>  <url>
     <loc>https://wallleap.cn/2019/11/07/WLU/</loc>
     <lastmod>2020-03-07</lastmod>
   </url>  <url>
@@ -61,10 +67,10 @@
     <loc>https://wallleap.cn/2019/08/08/hello-world/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
-    <loc>https://wallleap.cn/2019/09/27/web-HCL8/</loc>
+    <loc>https://wallleap.cn/2019/09/27/web-HCL7/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
-    <loc>https://wallleap.cn/2019/09/27/web-HCL7/</loc>
+    <loc>https://wallleap.cn/2019/09/27/web-HCL8/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
     <loc>https://wallleap.cn/2019/09/11/web-HCL2/</loc>
@@ -73,13 +79,13 @@
     <loc>https://wallleap.cn/2019/09/18/web-HCL4/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
-    <loc>https://wallleap.cn/2019/09/12/web-HCL3/</loc>
-    <lastmod>2019-10-24</lastmod>
-  </url>  <url>
     <loc>https://wallleap.cn/2019/09/18/web-HCL5/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
     <loc>https://wallleap.cn/2019/09/19/web-HCL6/</loc>
+    <lastmod>2019-10-24</lastmod>
+  </url>  <url>
+    <loc>https://wallleap.cn/2019/09/12/web-HCL3/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
     <loc>https://wallleap.cn/2019/09/09/web-HCL0/</loc>
