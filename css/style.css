@@ -1052,7 +1052,7 @@ div.ac > ul > li:before,
 .nav-right .title-list nav a,
 .nav-right .title-list #local-search-result a {
   display: block;
-  height: 32px;
+  height: 34px;
   color: inherit;
   position: relative;
 }
