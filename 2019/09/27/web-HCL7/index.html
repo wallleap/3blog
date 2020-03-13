@@ -105,9 +105,25 @@ referrer.setAttribute("content", "never");
   const referrer  = document.getElementById("referrer");
   setTimeout(function(){
     referrer.setAttribute("content", "never");
-    alert("图片加载已完成，请手动刷新页面");
   },5000);
 </script>
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js">
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+  .pace .pace-progress {  background: rgb(251, 129, 30); /*进度条颜色*/
+  height: 3px;  }
+  .pace .pace-progress-inner {  box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+  }
+  .pace .pace-activity {  border-top-color: rgb(251, 129, 30);    /*上边框颜色*/
+  border-left-color: rgb(251, 129, 30);    /*左边框颜色*/
+}
+</style>
 <body>
 <aside class="nav">
     <div class="nav-left">
@@ -239,6 +255,22 @@ referrer.setAttribute("content", "never");
     
         
             
+            <li><div data-rel="编程"><i class="fold iconfont icon-right"></i>编程<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据结构">数据结构<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="笔记"><i class="fold iconfont icon-right"></i>笔记<small>(11)</small></div>
                 
                     <ul class="sub hide">
@@ -256,22 +288,6 @@ referrer.setAttribute("content", "never");
                         </li>
                             
                         <li><div data-rel="五笔学习">五笔学习<small>(1)</small></div>
-                            
-                        </li>
-                            
-                    </ul>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="编程"><i class="fold iconfont icon-right"></i>编程<small>(2)</small></div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="数据结构">数据结构<small>(2)</small></div>
                             
                         </li>
                             
@@ -303,22 +319,6 @@ referrer.setAttribute("content", "never");
     
         
             
-            <li><div data-rel="电脑"><i class="fold iconfont icon-right"></i>电脑<small>(1)</small></div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="Win10">Win10<small>(1)</small></div>
-                            
-                        </li>
-                            
-                    </ul>
-                
-            </li>
-            
-        
-    
-        
-            
             <li><div data-rel="资源"><i class="fold iconfont icon-right"></i>资源<small>(1)</small></div>
                 
                     <ul class="sub hide">
@@ -335,23 +335,19 @@ referrer.setAttribute("content", "never");
     
         
             
+            <li><div data-rel="阅读">阅读<small>(1)</small></div>
+                
+            </li>
+            
         
     
         
             
-            <li><div data-rel="网络"><i class="fold iconfont icon-right"></i>网络<small>(15)</small></div>
+            <li><div data-rel="电脑"><i class="fold iconfont icon-right"></i>电脑<small>(1)</small></div>
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="HCNA">HCNA<small>(4)</small></div>
-                            
-                        </li>
-                            
-                        <li><div data-rel="基础">基础<small>(1)</small></div>
-                            
-                        </li>
-                            
-                        <li><div data-rel="华三">华三<small>(4)</small></div>
+                        <li><div data-rel="Win10">Win10<small>(1)</small></div>
                             
                         </li>
                             
@@ -363,9 +359,29 @@ referrer.setAttribute("content", "never");
     
         
             
-            <li><div data-rel="阅读">阅读<small>(1)</small></div>
+            <li><div data-rel="网络"><i class="fold iconfont icon-right"></i>网络<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="华三">华三<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="HCNA">HCNA<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
                 
             </li>
+            
+        
+    
+        
             
         
     
@@ -423,7 +439,7 @@ referrer.setAttribute("content", "never");
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="35">
-<input type="hidden" id="yelog_site_word_count" value="90.5k">
+<input type="hidden" id="yelog_site_word_count" value="89.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_pv"></span>
     <span id="busuanzi_value_site_uv"></span>
@@ -468,14 +484,6 @@ referrer.setAttribute("content", "never");
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a class="color3">考研</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">英语</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color5">数据结构</a>
     </li>
     
@@ -488,15 +496,15 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color3">考研</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">英语</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">主题</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">Win10</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color2">Ubuntu</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -508,15 +516,19 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color5">HCNA</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">eNSP</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color3">悦读</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Win10</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">Ubuntu</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">HCNA</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -524,11 +536,15 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color5">eNSP</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">Hexo</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color2">Sakura</a>
+        <a class="color2">GitHub</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -540,23 +556,11 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color2">GitHub</a>
+        <a class="color2">Sakura</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color4">交换机</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color2">w650dc</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">hackintosh</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">黑苹果</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -580,6 +584,18 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color2">w650dc</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">hackintosh</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">黑苹果</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">eNsp</a>
     </li>
     
@@ -589,10 +605,6 @@ referrer.setAttribute("content", "never");
     
     <li class="article-tag-list-item">
         <a class="color4">RIP</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">微信防盗链</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -608,11 +620,15 @@ referrer.setAttribute("content", "never");
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color4">企业网</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">五笔</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">企业网</a>
+        <a class="color1">微信防盗链</a>
     </li>
     
     <div class="clearfix"></div>
@@ -651,7 +667,7 @@ referrer.setAttribute("content", "never");
         
         <a  class="笔记 Hexo "
            href="/2020/03/08/hexo-themes/"
-           data-tag="Hexo,Sakura,Blog,博客"
+           data-tag="Hexo,Blog,博客,Sakura"
            data-author="" >
             <span class="post-title" title="hexo博客如何更换主题，并且进行常用的配置">hexo博客如何更换主题，并且进行常用的配置</span>
             <span class="post-date" title="2020-03-08 13:31:00">2020/03/08</span>
@@ -723,7 +739,7 @@ referrer.setAttribute("content", "never");
         
         <a  class="笔记 Hexo "
            href="/2020/02/08/hexo-blog/"
-           data-tag="Hexo,Blog,博客,GitHub"
+           data-tag="Hexo,GitHub,Blog,博客"
            data-author="" >
             <span class="post-title" title="闲着也是闲着，不如搭个免费的博客玩玩">闲着也是闲着，不如搭个免费的博客玩玩</span>
             <span class="post-date" title="2020-02-08 21:34:47">2020/02/08</span>
@@ -859,7 +875,7 @@ referrer.setAttribute("content", "never");
         
         <a  class="笔记 Hexo "
            href="/2019/08/25/mac-blog4/"
-           data-tag="Hexo,Blog,博客,GitHub"
+           data-tag="Hexo,GitHub,Blog,博客"
            data-author="" >
             <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(4)--博客维护">Mac使用Hexo和GitHub搭建博客(4)--博客维护</span>
             <span class="post-date" title="2019-08-25 09:30:28">2019/08/25</span>
@@ -867,7 +883,7 @@ referrer.setAttribute("content", "never");
         
         <a  class="笔记 Hexo "
            href="/2019/08/25/mac-blog3/"
-           data-tag="Hexo,Blog,博客,GitHub"
+           data-tag="Hexo,GitHub,Blog,博客"
            data-author="" >
             <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(3)--发布文章">Mac使用Hexo和GitHub搭建博客(3)--发布文章</span>
             <span class="post-date" title="2019-08-25 08:46:41">2019/08/25</span>
@@ -875,7 +891,7 @@ referrer.setAttribute("content", "never");
         
         <a  class="笔记 Hexo "
            href="/2019/08/24/mac-blog2/"
-           data-tag="Hexo,Blog,博客,GitHub"
+           data-tag="Hexo,GitHub,Blog,博客"
            data-author="" >
             <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(2)--优化配置">Mac使用Hexo和GitHub搭建博客(2)--优化配置</span>
             <span class="post-date" title="2019-08-24 20:21:59">2019/08/24</span>
@@ -883,7 +899,7 @@ referrer.setAttribute("content", "never");
         
         <a  class="笔记 Hexo "
            href="/2019/08/24/mac-blog1/"
-           data-tag="Hexo,Blog,博客,GitHub"
+           data-tag="Hexo,GitHub,Blog,博客"
            data-author="" >
             <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(1)--搭建博客">Mac使用Hexo和GitHub搭建博客(1)--搭建博客</span>
             <span class="post-date" title="2019-08-24 20:14:35">2019/08/24</span>
@@ -995,7 +1011,7 @@ referrer.setAttribute("content", "never");
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="■实验目的"><a href="#■实验目的" class="headerlink" title="■实验目的"></a>■实验目的</h2><p>与上一个实验差不多，将RIP换成OSPF即可</p>
-<p>拓扑如下：<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic1.png" alt=""></p>
+<p>拓扑如下：<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic1.png" alt=""></p>
 <h2 id="■配置"><a href="#■配置" class="headerlink" title="■配置"></a>■配置</h2><h3 id="▲S4："><a href="#▲S4：" class="headerlink" title="▲S4："></a>▲S4：</h3><blockquote>
 <p>去除提示信息，修改交换机名称</p>
 </blockquote>
@@ -1430,7 +1446,7 @@ The current configuration will be written to the device.
 Are you sure to continue?[Y/N]y
 Info: Please input the file name ( *.cfg, *.zip ) [vrpcfg.zip]:
 Now saving the current configuration to the slot 17.
-Save the configuration successfully.</code></pre><h2 id="■测试"><a href="#■测试" class="headerlink" title="■测试"></a>■测试</h2><p>Ping<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic2.png" alt=""><br>S1或S2<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic3.png" alt=""><br>S4或S5<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic4.png" alt=""></p>
+Save the configuration successfully.</code></pre><h2 id="■测试"><a href="#■测试" class="headerlink" title="■测试"></a>■测试</h2><p>Ping<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic2.png" alt=""><br>S1或S2<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic3.png" alt=""><br>S4或S5<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL7/pic4.png" alt=""></p>
 <hr>
 <p> <strong>文章汇总：</strong></p>
 <table><tr><td bgcolor=#FFFF00> HCL的安装和使用</td></tr></table>
@@ -1520,11 +1536,22 @@ Save the configuration successfully.</code></pre><h2 id="■测试"><a href="#�
     <div class="copyright">
         <div id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
+      <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+      <a style="color: #b9b9b9;" href="https://www.jinrishici.com/" target="_blank" rel="noopener"><span id="poem_sentence" style="text-align: left;"></span>
+      <span id="poem_info" style="text-align: right;"></span></a>
+      <script type="text/javascript">
+        jinrishici.load(function(result) {
+          var sentence = document.querySelector("#poem_sentence")
+          var info = document.querySelector("#poem_info")
+          sentence.innerHTML = result.data.content
+          info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+        });
+      </script>
     <!-- // 文字滚动 -->
-    <!--
-    <div id="binft" style="text-align:center;"></div>
-    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/textScroll.js"></script>
-    -->
+    
+    <!-- <div id="binft" style="text-align:center; color: #666666;"></div>
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/textScroll.js"></script> -->
+   
     <div class="footertext">
       <div class="img-preload">
         <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/other/wordpress-rotating-ball-o.svg">
@@ -1533,20 +1560,20 @@ Save the configuration successfully.</code></pre><h2 id="■测试"><a href="#�
   
         
 
-      <p style="color: #666666;"><a href="#" style="color: #666666;">Blog wallleap</a>, Copyright &copy; 2019-2020 by Luwang All Rights Reserved.</p>
+      <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>, Copyright &copy; 2019-2020 by Luwang All Rights Reserved.</p>
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
         <i class="fa fa-fire" aria-hidden="true"></i>
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">3-hexo</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://yelog.org/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">yelog</a>, Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>, Hosted by <a href="https://gitlab.com/" target="_blank">Gitlab Pages</a> & <a href="https://github.com/" target="_blank">Github Pages</a>
+        <span style="color: #666;">Theme <a style="color: #b9b9b9;" href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" style="color: #b9b9b9; text-decoration: underline dotted rgba(0, 0, 0, .1);">3-hexo</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://yelog.org/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">yelog</a>, Powered by <a style="color: #b9b9b9;" href="https://hexo.io/" target="_blank">Hexo</a>, Hosted by <a style="color: #b9b9b9;" href="https://gitlab.com/" target="_blank">Gitlab Pages</a> & <a style="color: #b9b9b9;" href="https://github.com/" target="_blank">Github Pages</a>
         </span>
       </p>
     </div>
 
     
-    <a href="http://beian.miit.gov.cn" target="_blank">	<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/logo/ICP.png" style="vertical-align: text-bottom; width: 17px;" />赣ICP备20000895号</a>
+    <a style="color: #b9b9b9;" href="http://beian.miit.gov.cn" target="_blank">	<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/logo/ICP.png" style="vertical-align: text-bottom; width: 17px;" />赣ICP备20000895号-1</a>
     
-    <span style="color: #ccc;padding-left: 20px;">
+    <span style="color: #666;padding-left: 20px;">
       <i class="fa fa-clock-o" aria-hidden="true"></i>
       <span id="time" align="center">载入时间中...</span>
       <script>
@@ -1564,20 +1591,22 @@ Save the configuration successfully.</code></pre><h2 id="■测试"><a href="#�
        } 
        setInterval("createtime()",250);
       </script>
-      <span style="color:#ccc;padding-left: 20px;"><i class="fa fa-eye" aria-hidden="true"></i>访问量: <span class="site_pv"></span>次</span>
+      <span style="color:#666;padding-left: 20px;"><i class="fa fa-eye" aria-hidden="true"></i>访问量: <span class="site_pv"></span>次</span>
       <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278079074'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278079074%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
     </span>
-      <img width="560px" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/wechat/wallleap.png">
-    <!--
+      
+
     <div class="site-img" style="margin-top:20px;">
-      <a href="https://www.google.com/search?sxsrf=ACYBGNT2ZrasjGUBG6Nj1_Xye1N67lpsrA%3A1573382249794&source=hp&ei=aejHXey4LYHu-gSQlLqgDg&q=site%3Awallleap.cn&oq=site%3Awallleap.cn&gs_l=psy-ab.3...32142.36345..36698...0.0..4.1018.9243.3-5j2j5j3j1......0....1..gws-wiz.....10..35i362i39j35i39j0.9jvLRXQs6zM&ved=0ahUKEwiskd7Qud_lAhUBt54KHRCKDuQQ4dUDCAY&uact=5" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/Google.svg" width="100px" height="80px"></a>
+      <a href="#"><img width="350px" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/wechat/wallleap.png"></a>
+      <!-- <a href="https://www.google.com/search?sxsrf=ACYBGNT2ZrasjGUBG6Nj1_Xye1N67lpsrA%3A1573382249794&source=hp&ei=aejHXey4LYHu-gSQlLqgDg&q=site%3Awallleap.cn&oq=site%3Awallleap.cn&gs_l=psy-ab.3...32142.36345..36698...0.0..4.1018.9243.3-5j2j5j3j1......0....1..gws-wiz.....10..35i362i39j35i39j0.9jvLRXQs6zM&ved=0ahUKEwiskd7Qud_lAhUBt54KHRCKDuQQ4dUDCAY&uact=5" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/Google.svg" width="100px" height="80px"></a>
       <a href="https://www.baidu.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/baidu.png" width="100px" height="80px"></a>
       <a href="https://www.jsdelivr.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/JsDelivr_Logo.svg" width="100px" height="80px"></a>
       <a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/github-logo.jpg" width="100px" height="80px"></a>
       <a href="https://aliyun.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/aliyun-logo.png" width="100px" height="80px"></a>
-      <a href="https://dev.tencent.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/tencentyun-logo.jpg" width="100px" height="80px"></a>  
+      <a href="https://dev.tencent.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/tencentyun-logo.jpg" width="100px" height="80px"></a>   -->
     </div>
-   -->
+
+   
   </div><!-- .site-info -->
 </div>
     </div>
@@ -1613,7 +1642,7 @@ Save the configuration successfully.</code></pre><h2 id="■测试"><a href="#�
 </div>
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 $(function () {
     const observer = lozad();
     observer.observe();
@@ -1629,7 +1658,7 @@ $(function () {
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#考研','#英语','#数据结构','#C/C++','#技术','#主题','#Win10','#Ubuntu','#逆水寒','#图集','#HCNA','#eNSP','#悦读','#VLAN','#Hexo','#Sakura','#Blog','#博客','#GitHub','#交换机','#w650dc','#hackintosh','#黑苹果','#HCL','#华三','#安装','#实验','#配置','#eNsp','#STP','#RIP','#微信防盗链','#ACL','#NAT','#OSPF','#五笔','#企业网',],
+            'data': ['#数据结构','#C/C++','#技术','#考研','#英语','#主题','#逆水寒','#图集','#悦读','#Win10','#Ubuntu','#HCNA','#VLAN','#eNSP','#Hexo','#GitHub','#Blog','#博客','#Sakura','#交换机','#HCL','#华三','#安装','#实验','#配置','#w650dc','#hackintosh','#黑苹果','#eNsp','#STP','#RIP','#ACL','#NAT','#OSPF','#企业网','#五笔','#微信防盗链',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

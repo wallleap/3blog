@@ -1684,7 +1684,7 @@ body {
   height: 100%;
   margin: 0;
   color: #283444;
-  font: 400 16px/1 "Open Sans", "Hiragino Sans GB", sans-serif;
+  font: 14px 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: none;
   overflow: hidden;
@@ -1698,6 +1698,12 @@ a {
   -ms-transition: color 0.35s;
   -o-transition: color 0.35s;
   transition: color 0.35s;
+}
+a * {
+  cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/normal.cur"), auto !important;
+}
+a :active {
+  cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/No_Disponible.cur"), auto !important;
 }
 h1,
 h2,
@@ -2223,7 +2229,7 @@ span.linkss-title {
 @media screen and (max-width: 1468px) {
   html,
   body {
-    font: 400 15px/1 "Open Sans", "Hiragino Sans GB", sans-serif;
+    font: 14px 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   }
   .nav {
     width: 492px;
