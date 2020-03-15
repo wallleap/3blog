@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wallleap.cn/2020/03/02/switchbase/</loc>
+    <lastmod>2020-03-15</lastmod>
+  </url>  <url>
+    <loc>https://wallleap.cn/2020/03/04/wubi/</loc>
+    <lastmod>2020-03-14</lastmod>
+  </url>  <url>
     <loc>https://wallleap.cn/2020/03/07/hcna-vlan/</loc>
     <lastmod>2020-03-13</lastmod>
   </url>  <url>
@@ -29,12 +35,6 @@
     <lastmod>2020-03-07</lastmod>
   </url>  <url>
     <loc>https://wallleap.cn/2020/02/29/networkmodule/</loc>
-    <lastmod>2020-03-07</lastmod>
-  </url>  <url>
-    <loc>https://wallleap.cn/2020/03/02/switchbase/</loc>
-    <lastmod>2020-03-07</lastmod>
-  </url>  <url>
-    <loc>https://wallleap.cn/2020/03/04/wubi/</loc>
     <lastmod>2020-03-07</lastmod>
   </url>  <url>
     <loc>https://wallleap.cn/2020/02/08/hexo-blog/</loc>
@@ -70,10 +70,10 @@
     <loc>https://wallleap.cn/2019/08/08/hello-world/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
-    <loc>https://wallleap.cn/2019/09/27/web-HCL8/</loc>
+    <loc>https://wallleap.cn/2019/09/27/web-HCL7/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
-    <loc>https://wallleap.cn/2019/09/27/web-HCL7/</loc>
+    <loc>https://wallleap.cn/2019/09/27/web-HCL8/</loc>
     <lastmod>2019-10-24</lastmod>
   </url>  <url>
     <loc>https://wallleap.cn/2019/09/11/web-HCL2/</loc>
