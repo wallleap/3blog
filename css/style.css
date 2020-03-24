@@ -1689,6 +1689,12 @@ body {
   -webkit-text-size-adjust: none;
   overflow: hidden;
 }
+* {
+  cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/normal.cur"), auto !important;
+}
+a {
+  cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/No_Disponible.cur"), auto !important;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -1698,12 +1704,6 @@ a {
   -ms-transition: color 0.35s;
   -o-transition: color 0.35s;
   transition: color 0.35s;
-}
-a * {
-  cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/normal.cur"), auto !important;
-}
-a :active {
-  cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/No_Disponible.cur"), auto !important;
 }
 h1,
 h2,
