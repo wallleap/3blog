@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta id="referrer" name="referrer" content="always" />
-  <title>HCL配置(二)--VLAN间通信 | wallleap</title>
-  <meta name="keywords" content=" HCL , 华三 , 实验 , 配置 ">
-  <meta name="description" content="HCL配置(二)--VLAN间通信 | wallleap">
+  <title>Markdown语法大全 | wallleap</title>
+  <meta name="keywords" content=" Markdown ">
+  <meta name="description" content="Markdown语法大全 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="[ルー・ワンwallleap]      与&amp;nbsp; luwang&amp;nbsp; （  真（ま）白（しろ）  ）  对话中...         bot_ui_ini()">
 <meta property="og:type" content="website">
@@ -973,9 +973,9 @@ referrer.setAttribute("content", "never");
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-web-HCL2" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-markdown" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">HCL配置(二)--VLAN间通信</h1>
+        <h1 class="article-title">Markdown语法大全</h1>
     
     <div class="article-meta">
         
@@ -983,34 +983,28 @@ referrer.setAttribute("content", "never");
         
         <span class="book">
             
-                <a  data-rel="网络">网络</a>/
+                <a  data-rel="笔记">笔记</a>/
             
-                <a  data-rel="华三">华三</a>
+                <a  data-rel="Markdown">Markdown</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color4">HCL</a>
-            
-            <a class="color3">华三</a>
-            
-            <a class="color3">实验</a>
-            
-            <a class="color3">配置</a>
+            <a class="color4">Markdown</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-24 12:49:59'>2019-09-11 18:06</time>
+        创建时间:<time class="date" title='更新时间: 2020-03-29 21:30:56'>2020-03-08 21:09</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:711</span>
+        <span>字数:4.3k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1040,7 +1034,7 @@ referrer.setAttribute("content", "never");
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HCL配置-二-–VLAN间通信"><span class="toc-text">HCL配置(二)–VLAN间通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、任务"><span class="toc-text">一、任务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、配置"><span class="toc-text">二、配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-通过三层交换机使用SVI实现通信"><span class="toc-text">(一)通过三层交换机使用SVI实现通信</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、配置PC"><span class="toc-text">1、配置PC</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、最上面的交换机S0"><span class="toc-text">2、最上面的交换机S0</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、左边交换机S1"><span class="toc-text">3、左边交换机S1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4、右边交换机S2"><span class="toc-text">4、右边交换机S2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5、测试"><span class="toc-text">5、测试</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-其他方法"><span class="toc-text">(二)其他方法</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、概述"><span class="toc-text">一、概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-设计理念"><span class="toc-text">1.1 设计理念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-内联-HTML-语法"><span class="toc-text">1.2 内联 HTML 语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-特殊字符自动转义"><span class="toc-text">1.3 特殊字符自动转义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、行内语法讲解"><span class="toc-text">二、行内语法讲解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-注释的表述"><span class="toc-text">2.1 注释的表述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-分级标题、任务列表"><span class="toc-text">2.2 分级标题、任务列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-缩进、换行、空行、对齐方式"><span class="toc-text">2.3 缩进、换行、空行、对齐方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-斜体、粗体、删除线、下划线、背景高亮"><span class="toc-text">2.4 斜体、粗体、删除线、下划线、背景高亮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-超链接、页内链接、自动链接、注脚"><span class="toc-text">2.5 超链接、页内链接、自动链接、注脚</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-无序列表、有序列表、定义型列表"><span class="toc-text">2.6 无序列表、有序列表、定义型列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-插入图像"><span class="toc-text">2.7 插入图像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-多级引用"><span class="toc-text">2.8 多级引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-转义字符、字体、字号、颜色"><span class="toc-text">2.9 转义字符、字体、字号、颜色</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、块语法讲解"><span class="toc-text">三、块语法讲解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-内容目录"><span class="toc-text">3.1 内容目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-代码块"><span class="toc-text">3.2 代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-流程图"><span class="toc-text">3.3 流程图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-表格"><span class="toc-text">3.4 表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-LaTeX-公式"><span class="toc-text">3.5 LaTeX 公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-分隔线"><span class="toc-text">3.6 分隔线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-HTML-原始码"><span class="toc-text">3.7 HTML 原始码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8-特殊字"><span class="toc-text">3.8 特殊字</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1056,138 +1050,455 @@ referrer.setAttribute("content", "never");
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="HCL配置-二-–VLAN间通信"><a href="#HCL配置-二-–VLAN间通信" class="headerlink" title="HCL配置(二)–VLAN间通信"></a><font color="red">HCL配置(二)–VLAN间通信</font></h1><h2 id="一、任务"><a href="#一、任务" class="headerlink" title="一、任务"></a><font color="orange">一、任务</font></h2><blockquote>
-<p>Vlan间通信：<br>VLAN10、20、30、40内的主机之间互ping成功</p>
-</blockquote>
-<h2 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a><font color="orange">二、配置</font></h2><h3 id="一-通过三层交换机使用SVI实现通信"><a href="#一-通过三层交换机使用SVI实现通信" class="headerlink" title="(一)通过三层交换机使用SVI实现通信"></a><font color="pink">(一)通过三层交换机使用SVI实现通信</font></h3><p>拓扑图如下：</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL2/pic1.png" alt="拓扑"></p>
-<p>主机IP：</p>
-<ul>
-<li><code>PC1：　192.168.10.100/24</code></li>
-<li><code>PC2：　192.168.20.100/24</code></li>
-<li><code>PC3：　192.168.30.100/24</code></li>
-<li><code>PC4：　192.168.40.100/24</code></li>
+        <p>这位老哥写的已经挺全了，刚好有一些语法忘记了，留个档</p>
+<p>[TOC]</p>
+<h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1-1-设计理念"><a href="#1-1-设计理念" class="headerlink" title="1.1 设计理念"></a>1.1 设计理念</h3><ul>
+<li>Markdown 易于阅读，方便创作web文档，利于各平台无缝分发。</li>
+<li>Markdown 语法灵感最大的来源还是纯文本 email 的格式，完全由标点符号标签组成的纯文本。</li>
+<li>Markdown 文件应该以纯文本形式原样发布，不应该包含标记标签和格式化指令。</li>
 </ul>
-<p>VLANIP规划：</p>
-<ul>
-<li><code>VLAN10：　192.168.10.1/24</code></li>
-<li><code>VLAN20：　192.168.20.1/24</code></li>
-<li><code>VLAN30：　192.168.30.1/24</code></li>
-<li><code>VLAN40：　192.168.40.1/24</code></li>
+<h3 id="1-2-内联-HTML-语法"><a href="#1-2-内联-HTML-语法" class="headerlink" title="1.2 内联 HTML 语法"></a>1.2 内联 HTML 语法</h3><ul>
+<li>HTML 是一种发布格式，Markdown 是一种创作格式。</li>
+<li>Markdown语法集合比较小，只是HTML标签的一小部分。</li>
+<li>对于 Markdown 中未包含的标签, 可以直接使用 HTML标签，例如用 HTML <a> 标签替代 Markdown 的链接语法。</li>
 </ul>
-<h4 id="1、配置PC"><a href="#1、配置PC" class="headerlink" title="1、配置PC"></a>1、配置PC</h4><p>配置好IP地址，掩码，网关（网关是VLAN的IP）</p>
-<h4 id="2、最上面的交换机S0"><a href="#2、最上面的交换机S0" class="headerlink" title="2、最上面的交换机S0"></a>2、最上面的交换机S0</h4><blockquote>
-<p>命名</p>
+<h3 id="1-3-特殊字符自动转义"><a href="#1-3-特殊字符自动转义" class="headerlink" title="1.3 特殊字符自动转义"></a>1.3 特殊字符自动转义</h3><p>  <br>在 HTML 中, 有两个字符需要特殊对待: &lt; 和 &amp;，左尖括号用于起始标签。果你想将它们用作字面量, 你必须将它们转义为字符实体, 例如<code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
+<h2 id="二、行内语法讲解"><a href="#二、行内语法讲解" class="headerlink" title="二、行内语法讲解"></a>二、行内语法讲解</h2><h3 id="2-1-注释的表述"><a href="#2-1-注释的表述" class="headerlink" title="2.1 注释的表述"></a>2.1 注释的表述</h3><ul>
+<li>代码法<pre><code>&lt;div style=&#39;display: none&#39;&gt;
+哈哈我是注释，不会在浏览器中显示。
+&lt;/div&gt;</code></pre></li>
+<li>html注释</li>
+</ul>
+<p>既然支持html语法，那也支持html注释，快捷键 comment + /。</p>
+<pre><code>&lt;!--哈哈我是注释，不会在浏览器中显示。--&gt;
+&lt;!--
+哈哈我是多段注释，
+不会在浏览器中显示。
+    --&gt;</code></pre><ul>
+<li>hack方法</li>
+</ul>
+<p>hack方法就是利用markdown的解析原理来实现注释的。<br>一般有的markdown解析器不支持上面的注释方法，这个时候就可以用hack方法。<br>hack方法比上面2种方法稳定得多，但是语义化太差。</p>
+<pre><code>[//]: # (哈哈我是最强注释，不会在浏览器中显示。)
+[^_^]: # (哈哈我是最萌注释，不会在浏览器中显示。)
+[//]: &lt;&gt; (哈哈我是注释，不会在浏览器中显示。)
+[comment]: &lt;&gt; (哈哈我是注释，不会在浏览器中显示。)</code></pre><h3 id="2-2-分级标题、任务列表"><a href="#2-2-分级标题、任务列表" class="headerlink" title="2.2 分级标题、任务列表"></a>2.2 分级标题、任务列表</h3><ul>
+<li><p>分级标题</p>
+<pre><code># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题  &lt;!--最多6级标题--&gt;</code></pre><p>由于用了标记编辑器会把所有标题写到目录大纲中，在这里写的演示标题也会列进去，所以就不演示了。同学们自己在编辑器中观察，很简单，一级标题字号最大，依级递减。</p>
+</li>
+<li><p>任务列表<br>Markdown 语法：<br>```</p>
+</li>
+<li><input disabled="" type="checkbox"> <p>任务一 未做任务 <code>- + 空格 + [ ]</code></p>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <p>任务二 已做任务 <code>- + 空格 + [x]</code></p>
+<pre><code>效果如下：
+</code></pre></li>
+</ul>
+<p>[ ] 任务一 未做任务 - + 空格 + [ ]<br>[x] 任务二 已做任务 - + 空格 + [x]</p>
+<h3 id="2-3-缩进、换行、空行、对齐方式"><a href="#2-3-缩进、换行、空行、对齐方式" class="headerlink" title="2.3 缩进、换行、空行、对齐方式"></a>2.3 缩进、换行、空行、对齐方式</h3><ul>
+<li><p>首行缩进<br>不同特殊占位符所占空白是不一样大的。</p>
+<pre><code>【1】 &amp;emsp;或&amp;#8195; //全角
+【2】 &amp;ensp;或&amp;#8194; //半角
+【3】 &amp;nbsp;或&amp;#160;  //半角之半角</code></pre></li>
+<li><p>换行<br>由于markdown编辑器的不同,可能在一行字后面，直接换行回车，也能实现换行，但是在Visual Studio Code上，想要换行<strong>必须得在一行字后面空两个格子才行</strong>。</p>
+</li>
+</ul>
+<p>空行<br>在编辑的时候有多少个空行(只要这一行只有回车或者space没有其他的字符就算空行)，<strong>在渲染之后，只隔着一行</strong>。</p>
+<ul>
+<li>对齐方式<br>代码：<pre><code>&lt;center&gt;行中心对齐&lt;/center&gt;
+&lt;p align=&quot;left&quot;&gt;行左对齐&lt;/p&gt;
+&lt;p align=&quot;right&quot;&gt;行右对齐&lt;/p&gt;</code></pre>显示效果：</li>
+</ul>
+<center>行中心对齐</center>
+<p align="left">行左对齐</p>
+<p align="right">行右对齐</p>
+
+<h3 id="2-4-斜体、粗体、删除线、下划线、背景高亮"><a href="#2-4-斜体、粗体、删除线、下划线、背景高亮" class="headerlink" title="2.4 斜体、粗体、删除线、下划线、背景高亮"></a>2.4 斜体、粗体、删除线、下划线、背景高亮</h3><p>代码：</p>
+<pre><code>*斜体*或_斜体_
+**粗体**
+***加粗斜体***
+~~删除线~~
+++下划线++
+==背景高亮==     有一些不支持</code></pre><p>显示效果：<br>  <em>斜体</em>   <strong>粗体</strong>   <strong><em>加粗斜体</em></strong>   <del>删除线</del>   ++删除线++   ==背景高亮==</p>
+<h3 id="2-5-超链接、页内链接、自动链接、注脚"><a href="#2-5-超链接、页内链接、自动链接、注脚" class="headerlink" title="2.5 超链接、页内链接、自动链接、注脚"></a>2.5 超链接、页内链接、自动链接、注脚</h3><ul>
+<li>行内式<br>语法说明：</li>
+</ul>
+<p>[]里写链接文字，()里写链接地址, ()中的””中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字，链接地址与title前有一个空格。</p>
+<p>代码：</p>
+<pre><code>欢迎阅读 [择势勤](https://www.jianshu.com/u/16d77399d3a7 &quot;择势勤&quot;)</code></pre><p>显示效果：</p>
+<p>欢迎阅读 <a href="https://www.jianshu.com/u/16d77399d3a7" target="_blank" rel="noopener" title="择势勤">择势勤</a></p>
+<ul>
+<li>参考式<br>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。</li>
+</ul>
+<p>语法说明：<br>参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址。</p>
+<p>如果链接文字本身可以做为链接标记，你也可以写成[链接文字][]<br>[链接文字]：链接地址的形式，见代码的最后一行。</p>
+<p>代码：</p>
+<pre><code>我经常去的几个网站[Google][1]、[Leanote][2]。
+
+[1]:http://www.google.com 
+[2]:http://www.leanote.com</code></pre><p>显示效果：<br>我经常去的几个网站<a href="http://www.google.com" target="_blank" rel="noopener">Google</a>、<a href="http://www.leanote.com" target="_blank" rel="noopener">Leanote</a>。</p>
+<ul>
+<li>注脚<br>语法说明：</li>
+</ul>
+<p>在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。</p>
+<p>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p>
+<p>代码：</p>
+<pre><code>使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2]。
+
+[^1]:Markdown是一种纯文本标记语言
+
+[^2]:HyperText Markup Language 超文本标记语言</code></pre><p>显示效果：</p>
+<p>使用 Markdown<a href="Markdown是一种纯文本标记语言">^1</a>可以效率的书写文档, 直接转换成 HTML[^2]。</p>
+<p>[^2]:HyperText Markup Language 超文本标记语言</p>
+<p>注：脚注自动被搬运到最后面，请到文章末尾查看，脚注后方的链接可以直接跳转回到加注的地方。</p>
+<ul>
+<li>锚点（页内超链接）<br>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的，只支持在标题后插入锚点，其它地方无效。</li>
+</ul>
+<p>代码：</p>
+<pre><code>## 0. 目录{#index}</code></pre><p>显示效果：</p>
+<p>跳转到目录</p>
+<ul>
+<li>自动链接<br>语法说明：<br>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</li>
+</ul>
+<p>代码：</p>
+<pre><code>&amp;lt;http://example.com/&amp;gt; &amp;emsp;&amp;emsp; 
+&amp;lt;address@example.com&amp;gt;</code></pre><p>显示效果：</p>
+<p>&lt;<a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a>&gt; &emsp;&emsp;<br>&lt;<a href="mailto:address@example.com">address@example.com</a>&gt;</p>
+<h3 id="2-6-无序列表、有序列表、定义型列表"><a href="#2-6-无序列表、有序列表、定义型列表" class="headerlink" title="2.6 无序列表、有序列表、定义型列表"></a>2.6 无序列表、有序列表、定义型列表</h3><p>= 无序列表</p>
+<p>使用 *，+，- 表示无序列表。</p>
+<p>代码：</p>
+<pre><code>* 无序列表项 一
++ 无序列表项 二
+- 无序列表项 三</code></pre><p>显示效果：</p>
+<ul>
+<li>无序列表项 一</li>
+</ul>
+<ul>
+<li>无序列表项 二</li>
+</ul>
+<ul>
+<li>无序列表项 三</li>
+</ul>
+<p>= 有序列表</p>
+<p>有序列表则使用数字接着一个英文句点。<br>代码：</p>
+<pre><code>1. 有序列表项 一
+2. 有序列表项 二
+3. 有序列表项 三</code></pre><p>显示效果：</p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<p>= 定义型列表表</p>
+<p>语法说明：</p>
+<p>定义型列表由名词和解释组成。一行写上定义，紧跟一行写上解释。解释的写法:紧跟一个缩进(Tab)</p>
+<p>代码</p>
+<pre><code>Markdown
+:   轻量级文本标记语言（左侧有一个可见的冒号和四个不可见的空格）</code></pre><p>显示效果：</p>
+<dl><dt>Markdown</dt><dd>轻量级文本标记语言，可以转换成html，pdf等格式</dd></dl><h3 id="2-7-插入图像"><a href="#2-7-插入图像" class="headerlink" title="2.7 插入图像"></a>2.7 插入图像</h3><p>语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。</p>
+<p>Markdown 语法：</p>
+<pre><code>&lt;center&gt;  &lt;!--开始居中对齐--&gt;
+![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif &quot;图片Title&quot;)
+格式: ![图片Alt](图片地址 &quot;图片Title&quot;)
+&lt;/center&gt; &lt;!--结束居中对齐--&gt;</code></pre><p>效果如下：</p>
+<center>
+![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif "图片Title")
+</center>
+
+<h3 id="2-8-多级引用"><a href="#2-8-多级引用" class="headerlink" title="2.8 多级引用"></a>2.8 多级引用</h3><p>语法说明：</p>
+<p>引用需要在被引用的文本前加上&gt;符号和空格，允许多层嵌套，也允许你偷懒只在整个段落的第一行最前面加上<code>&gt;</code>。</p>
+<p>代码：</p>
+<pre><code>&gt;&gt;&gt; 请问 Markdwon 怎么用？ - 小白
+&gt;&gt; 自己看教程！ - 愤青
+&gt; 教程在哪？ - 小白</code></pre><p>显示效果：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>请问 Markdwon 怎么用？ - 小白<br>自己看教程！ - 愤青<br>教程在哪？ - 小白</p>
 </blockquote>
-<pre><code>&lt;H3C&gt;sys
-System View: return to User View with Ctrl+Z.
-[H3C]sys LWS0</code></pre><blockquote>
-<p>创建四个vlan</p>
 </blockquote>
-<pre><code>[LWS0]vlan 10
-[LWS0-vlan10]quit
-[LWS0]vlan 20
-[LWS0-vlan20]vlan 30
-[LWS0-vlan30]vlan 40
-[LWS0-vlan40]quit</code></pre><blockquote>
-<p>给vlan分配IP</p>
 </blockquote>
-<pre><code>[LWS0]int vlan 10
-[LWS0-Vlan-interface10]ip add 192.168.10.1 255.255.255.0
-[LWS0-Vlan-interface10]quit
-[LWS0]int vlan 20
-[LWS0-Vlan-interface20]ip add 192.168.20.1 255.255.255.0
-[LWS0-Vlan-interface20]int vlan 30
-[LWS0-Vlan-interface30]ip add 192.168.30.1 255.255.255.0
-[LWS0-Vlan-interface30]int vlan 40
-[LWS0-Vlan-interface40]ip add 192.168.40.1 255.255.255.0
-[LWS0-Vlan-interface40]quit</code></pre><blockquote>
-<p>接口设为trunk并允许所有vlan通过</p>
-</blockquote>
-<pre><code>[LWS0]int g1/0/1
-[LWS0-GigabitEthernet1/0/1]port link-type trunk
-[LWS0-GigabitEthernet1/0/1]port trunk permit vlan all
-[LWS0-GigabitEthernet1/0/1]no sh
-[LWS0-GigabitEthernet1/0/1]int g1/0/2
-[LWS0-GigabitEthernet1/0/2]no sh
-[LWS0-GigabitEthernet1/0/2]port link-ty t
-[LWS0-GigabitEthernet1/0/2]port t p vlan all</code></pre><h4 id="3、左边交换机S1"><a href="#3、左边交换机S1" class="headerlink" title="3、左边交换机S1"></a>3、左边交换机S1</h4><blockquote>
-<p>命名</p>
-</blockquote>
-<pre><code>&lt;H3C&gt;sys
-System View: return to User View with Ctrl+Z.
-[H3C]sys LWS1
-创建vlan
-[LWS1]vlan 10
-[LWS1-vlan10]vlan 20
-[LWS1-vlan20]quit</code></pre><blockquote>
-<p>与交换机相连的接口设为trunk，允许所有vlan通过</p>
-</blockquote>
-<pre><code>[LWS1-GigabitEthernet1/0/1]no sh
-[LWS1-GigabitEthernet1/0/1]port link-ty t
-[LWS1-GigabitEthernet1/0/1]port t p vlan all
-[LWS1-GigabitEthernet1/0/1]quit</code></pre><blockquote>
-<p>下面两个接口设为access</p>
-</blockquote>
-<pre><code>[LWS1]int g1/0/2
-[LWS1-GigabitEthernet1/0/2]port link-ty a
-[LWS1-GigabitEthernet1/0/2]port a vlan 10
-[LWS1-GigabitEthernet1/0/2]int g1/0/3
-[LWS1-GigabitEthernet1/0/3]no sh
-[LWS1-GigabitEthernet1/0/3]port link-ty a
-[LWS1-GigabitEthernet1/0/3]port a vlan 20
-[LWS1-GigabitEthernet1/0/3]quit</code></pre><h4 id="4、右边交换机S2"><a href="#4、右边交换机S2" class="headerlink" title="4、右边交换机S2"></a>4、右边交换机S2</h4><pre><code>[LWS2]vlan 30
-[LWS2-vlan30]vlan 40
-[LWS2-vlan40]quit
-[LWS2]int g1/0/1
-[LWS2-GigabitEthernet1/0/1]port link-ty t
-[LWS2-GigabitEthernet1/0/1]port t p vlan all
-[LWS2-GigabitEthernet1/0/1]quit
-[LWS2]int g1/0/2
-[LWS2-GigabitEthernet1/0/2]port link-ty a
-[LWS2-GigabitEthernet1/0/2]port a vlan 30
-[LWS2-GigabitEthernet1/0/2]int g1/0/3
-[LWS2-GigabitEthernet1/0/3]port link-ty a
-[LWS2-GigabitEthernet1/0/3]port a vlan 40
-[LWS2-GigabitEthernet1/0/3]quit</code></pre><h4 id="5、测试"><a href="#5、测试" class="headerlink" title="5、测试"></a>5、测试</h4><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL2/pic2.png" alt=""></p>
-<h3 id="二-其他方法"><a href="#二-其他方法" class="headerlink" title="(二)其他方法"></a><font color="pink">(二)其他方法</font></h3><p>其他的网上有详细的配置，因此只给出方法</p>
-<p>1、如果只有两个VLAN，那么可以在交换机端口设置trunk的本征VLAN，自行去标签</p>
-<p>多个VLAN的话设成Hybrid口，用untag撕去标签</p>
-<p>2、通过路由接口</p>
-<p>3、通过单臂路由</p>
-<hr>
-<p> <strong>文章汇总：</strong></p>
-<table><tr><td bgcolor=#FFFF00> HCL的安装和使用</td></tr></table>
+<h3 id="2-9-转义字符、字体、字号、颜色"><a href="#2-9-转义字符、字体、字号、颜色" class="headerlink" title="2.9 转义字符、字体、字号、颜色"></a>2.9 转义字符、字体、字号、颜色</h3><ul>
+<li>转义字符</li>
+</ul>
+<p>Markdown中的转义字符为\，转义的有：</p>
+<pre><code>\\ 反斜杠
+\` 反引号 
+\* 星号 
+\_ 下划线 
+\{\} 大括号 
+\[\] 中括号 
+\(\) 小括号  
+\# 井号 
+\+ 加号 
+\- 减号 
+\. 英文句号 
+\! 感叹号</code></pre><ul>
+<li>字体、字号、颜色<br>代码：<pre><code>&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;
+&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;
+&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;
+&lt;font color=#0099ff size=12 face=&quot;黑体&quot;&gt;黑体&lt;/font&gt;
+&lt;font color=gray size=5&gt;gray&lt;/font&gt;
+&lt;font color=#00ffff size=3&gt;null&lt;/font&gt;</code></pre>显示效果：</li>
+</ul>
+<p><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color=#0099ff size=12 face="黑体">黑体</font><br><font color=gray size=5>gray</font><br><font color=#00ffff size=3>null</font></p>
+<h2 id="三、块语法讲解"><a href="#三、块语法讲解" class="headerlink" title="三、块语法讲解"></a>三、块语法讲解</h2><h3 id="3-1-内容目录"><a href="#3-1-内容目录" class="headerlink" title="3.1 内容目录"></a>3.1 内容目录</h3><p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构。</p>
+<pre><code>[TOC]</code></pre><p>效果参见最上方的目录。</p>
+<h3 id="3-2-代码块"><a href="#3-2-代码块" class="headerlink" title="3.2 代码块"></a>3.2 代码块</h3><p>对于程序员来说这个功能是必不可少的，插入程序代码的方式有两种，一种是利用缩进(Tab), 另一种是利用”`”符号（一般在ESC键下方）包裹代码。</p>
+<ul>
+<li>行内式<br>代码：<pre><code>C语言里的函数 `scanf()` 怎么使用？</code></pre>显示效果：</li>
+</ul>
+<p>C语言里的函数 <code>scanf()</code> 怎么使用？</p>
+<ul>
+<li>缩进式多行代码<br>缩进 4 个空格或是 1 个制表符</li>
+</ul>
+<p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
+<p>代码：</p>
+<pre><code>#include &amp;lt;stdio.h&amp;gt;
+int main(void)
+{
+    printf(&amp;#34;Hello world\n&amp;#34;);
+}</code></pre><ul>
+<li>用六个`包裹多行代码<br>代码：<pre><code>、、、
+include &lt;stdio.h&gt;
+int main(void)
+{
+printf(&quot;Hello world\n&quot;);
+}
+、、、</code></pre>显示效果：<pre><code>include &lt;stdio.h&gt;
+int main(void)
+{
+printf(&quot;Hello world\n&quot;);
+}</code></pre></li>
+</ul>
+<h3 id="3-3-流程图"><a href="#3-3-流程图" class="headerlink" title="3.3 流程图"></a>3.3 流程图</h3><p>编辑自有道云笔记，代码：</p>
+<pre><code>```
+graph LR
+A--&gt;B
+```
+```
+sequenceDiagram
+A-&gt;&gt;B: How are you?
+B-&gt;&gt;A: Great!
+```</code></pre><p>显示效果：</p>
+<pre><code>graph LR
+A--&gt;B</code></pre><pre><code>sequenceDiagram
+A-&gt;&gt;B: How are you?
+B-&gt;&gt;A: Great!</code></pre><h3 id="3-4-表格"><a href="#3-4-表格" class="headerlink" title="3.4 表格"></a>3.4 表格</h3><p>语法说明：</p>
+<p>不管是哪种方式，第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。<br>列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。<br>第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。<br><code>-</code> 左对齐，<code>:-:</code>中心对齐，<code>-:</code>右对齐</p>
+<p>表格代码：</p>
+<pre><code>|学号|姓名|序号|
+|-|-|-|
+|小明明|男|5|
+|小红|女|79|
+|小陆|男|192|</code></pre><p>原生方式写表格：</p>
+<center>
+|学号|姓名|序号|
+|-|-|-|
+|小明明|男|5|
+|小红|女|79|
+|小陆|男|192|
+</center>
 
-<p><kbd><a href="/2019/09/09/web-HCL0/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#D1EEEE>ping通及Telnet</td></tr></table>
 
-<p><kbd><a href="/2019/09/09/web-HCL1/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#C0FF3E>VLAN间通信</td></tr></table>
+<h3 id="3-5-LaTeX-公式"><a href="#3-5-LaTeX-公式" class="headerlink" title="3.5 LaTeX 公式"></a>3.5 LaTeX 公式</h3><ul>
+<li>表示行内公式<br>代码：<pre><code>质能守恒方程可以用一个很简洁的方程式 `$E = m c^2 $`来表达。</code></pre>显示效果：</li>
+</ul>
+<p>质能守恒方程可以用一个很简洁的方程式 <code>$E = m c^2 $</code>来表达。</p>
+<ul>
+<li>表示整行公式</li>
+</ul>
+<p>大部分的浏览器支持的</p>
+<pre><code>$$ 公式 $$</code></pre><p>有道云笔记 使用格式，</p>
+<pre><code>```math
+E = mc^2
+```</code></pre><p>块级公式：</p>
+<pre><code>```math
+x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} 
+```
+```math
+[\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } }]
+```</code></pre><p>显示效果：</p>
+<pre><code class="math">x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} </code></pre>
+<pre><code class="math">[\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } }]</code></pre>
+<p>访问 <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fmath.meta.stackexchange.com%2Fquestions%2F5020%2Fmathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> 参考更多使用方法。</p>
+<h3 id="3-6-分隔线"><a href="#3-6-分隔线" class="headerlink" title="3.6 分隔线"></a>3.6 分隔线</h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<p>代码：</p>
+<pre><code>* * *
+***
+*****
+- - -
+-----------</code></pre><p>显示效果都一样：</p>
+<p>+++</p>
+<h3 id="3-7-HTML-原始码"><a href="#3-7-HTML-原始码" class="headerlink" title="3.7 HTML 原始码"></a>3.7 HTML 原始码</h3><p>在代码区块里面， &amp; 、 &lt; 和 &gt; 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，剩下的 Markdown 都会帮你处理，例如：</p>
+<p>代码：</p>
+<pre><code>第一个例子：
+&lt;div class=&quot;footer&quot;&gt;
+© 2004 Foo Corporation
+&lt;/div&gt;
+第二个例子：
+&lt;center&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th rowspan=&quot;2&quot;&gt;值班人员&lt;/th&gt;
+&lt;th&gt;星期一&lt;/th&gt;
+&lt;th&gt;星期二&lt;/th&gt;
+&lt;th&gt;星期三&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;李强&lt;/td&gt;
+&lt;td&gt;张明&lt;/td&gt;
+&lt;td&gt;王平&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/center&gt;</code></pre><p>显示效果：</p>
+<p>第一个例子：</p>
+<div class="footer">
+© 2004 Foo Corporation
+</div>
 
-<p><kbd><a href="/2019/09/11/web-HCL2/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#54FF9F>DHCP配置</td></tr></table>
+<p>第二个例子：</p>
+<center>
 
-<p><kbd><a href="/2019/09/12/web-HCL3/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#EFFF00> DHCP中继</td></tr></table>
+<table>
+<tr>
+<th rowspan="2">值班人员</th>
+<th>星期一</th>
+<th>星期二</th>
+<th>星期三</th>
+</tr>
+<tr>
+<td>李强</td>
+<td>张明</td>
+<td>王平</td>
+</tr>
+</table>
 
-<p><kbd><a href="/2019/09/18/web-HCL4/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#DFEEEE>STP及VRRP配置</td></tr></table>
+</center>
 
-<p><kbd><a href="/2019/09/18/web-HCL5/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#C0FFFE>RIP配置</td></tr></table>
 
-<p><kbd><a href="/2019/09/19/web-HCL6/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#54FFEF>OSPF配置</td></tr></table>
+<h3 id="3-8-特殊字"><a href="#3-8-特殊字" class="headerlink" title="3.8 特殊字"></a>3.8 特殊字</h3><center>
+特殊字符    描述    字符的代码
+空格符    &nbsp;
+<    小于号    &lt;
+>    大于号    &gt;
+&    和号    &amp;
+￥    人民币    &yen;
+©    版权    &copy;
+®    注册商标    &reg;
+°C    摄氏度    &deg;C
+±    正负号    &plusmn;
+×    乘号    &times;
+÷    除号    &divide;
+²    平方（上标²）    &sup2;
+³    立方（上标³）    &sup3;
+</center>
 
-<p><kbd><a href="/2019/09/27/web-HCL7/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#0FFF00>ACL+NAT配置</td></tr></table>
 
-<p><kbd><a href="/2019/09/27/web-HCL8/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor=#F1EEEE>使用eNSP搭建企业网络</td></tr></table>
-
-<p><kbd><a href="/2019/09/30/web-HCL9/index.html">go-></a></kbd></p>
-<hr>
+<p>文章转载自简书<br>版权归属 ©2019 择势勤<br>作者：择势勤<br>链接：<a href="https://www.jianshu.com/p/ebe52d2d468f#fnref1" target="_blank" rel="noopener">https://www.jianshu.com/p/ebe52d2d468f#fnref1</a></p>
+<p>还有其他的，顺便也记一下</p>
+<p>其他支持的 HTML 元素有：</p>
+<pre><code>&lt;kbd&gt;&lt;/kbd&gt;
+&lt;b&gt;&lt;/b&gt;
+&lt;i&gt;&lt;/i&gt; 
+&lt;em&gt;&lt;/em&gt; 
+&lt;sup&gt;&lt;/sup&gt;  
+&lt;sub&gt;&lt;/sub&gt;  
+&lt;br /&gt;
+etc.</code></pre><p>横向流程图源码格式：</p>
+<pre><code class="mermaid">graph LR
+A[方形] --&gt;B(圆角)
+    B --&gt; C{条件a}
+    C --&gt;|a=1| D[结果1]
+    C --&gt;|a=2| E[结果2]
+    F[横向流程图]</code></pre>
+<p>竖向流程图源码格式：</p>
+<pre><code class="mermaid">graph TD
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[竖向流程图]</code></pre>
+<p>标准流程图源码格式：</p>
+<pre><code class="flow">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op</code></pre>
+<p>标准流程图源码格式（横向）：</p>
+<pre><code class="flow">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op</code></pre>
+<p>UML时序图源码样例：</p>
+<pre><code class="sequence">对象A-&gt;对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B--&gt;对象A: 我很好(响应)
+对象A-&gt;对象B: 你真的好吗？</code></pre>
+<p>UML时序图源码复杂样例：</p>
+<pre><code class="sequence">Title: 标题：复杂使用
+对象A-&gt;对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B--&gt;对象A: 我很好(响应)
+对象B-&gt;小三: 你好吗
+小三--&gt;&gt;对象A: 对象B找我了
+对象A-&gt;对象B: 你真的好吗？
+Note over 小三,对象B: 我们是朋友
+participant C
+Note right of C: 没人陪我玩</code></pre>
+<p>UML标准时序图样例：</p>
+<pre><code class="mermaid">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头
+  sequenceDiagram
+    participant 张三
+    participant 李四
+    张三-&gt;王五: 王五你好吗？
+    loop 健康检查
+        王五-&gt;王五: 与疾病战斗
+    end
+    Note right of 王五: 合理 食物 &lt;br/&gt;看医生...
+    李四--&gt;&gt;张三: 很好!
+    王五-&gt;李四: 你怎么样?
+    李四--&gt;王五: 很好!</code></pre>
+<p>甘特图样例：</p>
+<pre><code class="mermaid">%% 语法示例
+        gantt
+        dateFormat  YYYY-MM-DD
+        title 软件开发甘特图
+        section 设计
+        需求                      :done,    des1, 2014-01-06,2014-01-08
+        原型                      :active,  des2, 2014-01-09, 3d
+        UI设计                     :         des3, after des2, 5d
+    未来任务                     :         des4, after des3, 5d
+        section 开发
+        学习准备理解需求                      :crit, done, 2014-01-06,24h
+        设计框架                             :crit, done, after des2, 2d
+        开发                                 :crit, active, 3d
+        未来任务                              :crit, 5d
+        耍                                   :2d
+        section 测试
+        功能测试                              :active, a1, after des3, 3d
+        压力测试                               :after a1  , 20h
+        测试报告                               : 48h</code></pre>
+<p><a href="http://markdown.xiaoshujiang.com/" target="_blank" rel="noopener">小书匠</a>中支持的语法非常多，可以去试用下哈</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
     </div>
@@ -1200,12 +1511,12 @@ System View: return to User View with Ctrl+Z.
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>HCL配置(二)--VLAN间通信</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">711</span></p>
+    <p><span class="copy-title">文章标题:</span>Markdown语法大全</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">4.3k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-11, 18:06:05</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-24, 12:49:59</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/11/web-HCL2/" title="HCL配置(二)--VLAN间通信">https://wallleap.cn/2019/09/11/web-HCL2/</a>
+    <p><span class="copy-title">发布时间:</span>2020-03-08, 21:09:24</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-29, 21:30:56</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/08/markdown/" title="Markdown语法大全">https://wallleap.cn/2020/03/08/markdown/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -1221,7 +1532,7 @@ System View: return to User View with Ctrl+Z.
 
 <script>
     var gitment = new Gitment({
-        id: 'https://wallleap.cn/2019/09/11/web-HCL2/', // 可选。默认为 location.href
+        id: 'https://wallleap.cn/2020/03/08/markdown/', // 可选。默认为 location.href
         owner: 'wallleap',
         repo: 'wallleap.github.io',
         oauth: {
