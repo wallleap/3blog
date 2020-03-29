@@ -76,11 +76,11 @@
     
       <category term="Hexo" scheme="https://wallleap.cn/tags/Hexo/"/>
     
-      <category term="Sakura" scheme="https://wallleap.cn/tags/Sakura/"/>
-    
       <category term="Blog" scheme="https://wallleap.cn/tags/Blog/"/>
     
       <category term="博客" scheme="https://wallleap.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Sakura" scheme="https://wallleap.cn/tags/Sakura/"/>
     
   </entry>
   
@@ -339,11 +339,11 @@
     
       <category term="Hexo" scheme="https://wallleap.cn/tags/Hexo/"/>
     
+      <category term="GitHub" scheme="https://wallleap.cn/tags/GitHub/"/>
+    
       <category term="Blog" scheme="https://wallleap.cn/tags/Blog/"/>
     
       <category term="博客" scheme="https://wallleap.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="GitHub" scheme="https://wallleap.cn/tags/GitHub/"/>
     
   </entry>
   
