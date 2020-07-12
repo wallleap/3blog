@@ -1,6 +1,13 @@
+https://wallleap.cn/2020/07/12/React/
+https://wallleap.cn/2020/07/04/Git/
+https://wallleap.cn/2020/06/14/nodejs/
+https://wallleap.cn/2020/06/14/MongoDB/
+https://wallleap.cn/2020/06/04/AngularJs/
+https://wallleap.cn/2020/06/04/ES/
 https://wallleap.cn/2020/03/30/hexoValine/
 https://wallleap.cn/2020/03/29/markdown/
 https://wallleap.cn/2020/03/27/wechatpaper/
+https://wallleap.cn/2020/03/24/webBase/
 https://wallleap.cn/2020/03/08/theme-beautify/
 https://wallleap.cn/2020/03/08/hexo-themes/
 https://wallleap.cn/2020/03/07/wechat-pic/
@@ -31,8 +38,3 @@ https://wallleap.cn/2019/08/28/DataStructure1/
 https://wallleap.cn/2019/08/25/DataStructure0/
 https://wallleap.cn/2019/08/25/mac-blog4/
 https://wallleap.cn/2019/08/25/mac-blog3/
-https://wallleap.cn/2019/08/24/mac-blog2/
-https://wallleap.cn/2019/08/24/mac-blog1/
-https://wallleap.cn/2019/08/08/hello-world/
-https://wallleap.cn/2019/03/14/w650dc-hackintosh/
-https://wallleap.cn/2018/12/12/Hexo-Theme-Sakura/
