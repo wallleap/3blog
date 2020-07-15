@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wallleap.cn/2020/07/12/React/</loc>
+    
+    <lastmod>2020-07-15T10:26:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wallleap.cn/2020/06/14/nodejs/</loc>
     
     <lastmod>2020-07-12T09:25:56.000Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://wallleap.cn/2020/07/04/Git/</loc>
     
     <lastmod>2020-07-12T08:55:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wallleap.cn/2020/07/12/React/</loc>
-    
-    <lastmod>2020-07-12T08:55:06.000Z</lastmod>
     
   </url>
   
