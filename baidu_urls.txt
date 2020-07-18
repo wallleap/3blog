@@ -7,6 +7,7 @@ https://wallleap.cn/2020/06/04/ES/
 https://wallleap.cn/2020/03/30/hexoValine/
 https://wallleap.cn/2020/03/29/markdown/
 https://wallleap.cn/2020/03/27/wechatpaper/
+https://wallleap.cn/2020/03/24/chrometwo/
 https://wallleap.cn/2020/03/24/webBase/
 https://wallleap.cn/2020/03/08/theme-beautify/
 https://wallleap.cn/2020/03/08/hexo-themes/
@@ -37,4 +38,3 @@ https://wallleap.cn/2019/09/09/web-HCL0/
 https://wallleap.cn/2019/08/28/DataStructure1/
 https://wallleap.cn/2019/08/25/DataStructure0/
 https://wallleap.cn/2019/08/25/mac-blog4/
-https://wallleap.cn/2019/08/25/mac-blog3/

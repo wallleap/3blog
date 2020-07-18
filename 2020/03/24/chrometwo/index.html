@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>STP及VRRP配置 | wallleap</title>
-  <meta name="keywords" content=" eNsp , STP ">
-  <meta name="description" content="STP及VRRP配置 | wallleap">
+  <title>怎样拥有两个独立的Chrome | wallleap</title>
+  <meta name="keywords" content=" 前端 , web ">
+  <meta name="description" content="怎样拥有两个独立的Chrome | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
@@ -1145,9 +1145,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-web-HCL5" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-chrometwo" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">STP及VRRP配置</h1>
+        <h1 class="article-title">怎样拥有两个独立的Chrome</h1>
     
     <div class="article-meta">
         
@@ -1157,7 +1157,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="网络">网络</a>
+            <a  data-rel="笔记">笔记</a> > 
+            
+            <a  data-rel="笔记&lt;---&gt;前端">前端</a>
             
         </span>
         
@@ -1165,21 +1167,21 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">eNsp</a>
+            <a class="color3">前端</a>
             
-            <a class="color4">STP</a>
+            <a class="color4">web</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2019-10-24 12:49:59'>2019-09-18 16:13</time>
+            发布时间 : <time class="date" title='最后更新: 2020-07-16 09:29:10'>2020-03-24 10:33</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.8k</span>
+        <span>字数:381</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1209,7 +1211,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">一、实验目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">二、配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">四个PC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">S3：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">S4：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">S1：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">S2：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">三、测试</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">1、问题起源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">2、解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">方法一、自己指定存放数据路径(推荐)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">方法二、直接生成新用户快捷方式</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1225,282 +1227,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2><span id="一-实验目的">一、实验目的</span></h2><p>1、Vrrp<br>2、Stp<br>3、能用DHCP自动获取IP<br>4、能相互ping通</p>
-<h2><span id="二-配置">二、配置</span></h2><blockquote>
-<p>拓扑如下</p>
-</blockquote>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic1.png" alt></p>
-<h3><span id="四个pc">四个PC</span></h3><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic2.png" alt></p>
-<h3><span id="s3">S3：</span></h3><pre><code>&lt;Huawei&gt;sys 
-Enter system view, return user view with Ctrl+Z.
-[Huawei]sys LWS3</code></pre><blockquote>
-<p>去除提示信息</p>
-</blockquote>
-<pre><code>[LWS3]undo info-center enable 
-Info: Information center is disabled.</code></pre><blockquote>
-<p>创建VLAN</p>
-</blockquote>
-<pre><code>[LWS3]vlan 10
-[LWS3-vlan10]vlan 20
-[LWS3-vlan20]quit</code></pre><blockquote>
-<p>接口配置</p>
-</blockquote>
-<pre><code>[LWS3]int e0/0/3
-[LWS3-Ethernet0/0/3]un sh
-Info: Interface Ethernet0/0/3 is not shutdown.
-[LWS3-Ethernet0/0/3]port link-type access
-[LWS3-Ethernet0/0/3]port default vlan 10
-[LWS3-Ethernet0/0/3]quit
-[LWS3]int e0/0/4
-[LWS3-Ethernet0/0/4]un sh
-Info: Interface Ethernet0/0/4 is not shutdown.
-[LWS3-Ethernet0/0/4]port link-ty a
-[LWS3-Ethernet0/0/4]port de vlan 20
-[LWS3-Ethernet0/0/4]quit
-[LWS3]int e0/0/1
-[LWS3-Ethernet0/0/1]un sh
-Info: Interface Ethernet0/0/1 is not shutdown.
-[LWS3-Ethernet0/0/1]port link-ty t
-[LWS3-Ethernet0/0/1]port t allow-pass vlan all
-[LWS3-Ethernet0/0/1]quit
-[LWS3]int e0/0/2
-[LWS3-Ethernet0/0/2]un sh
-Info: Interface Ethernet0/0/2 is not shutdown.
-[LWS3-Ethernet0/0/2]port link-ty t
-[LWS3-Ethernet0/0/2]port t allow vlan all
-[LWS3-Ethernet0/0/2]quit</code></pre><blockquote>
-<p>开启stp</p>
-</blockquote>
-<pre><code>[LWS3]stp mode stp
-Info: This operation may take a few seconds. Please wait for a moment...done.</code></pre><blockquote>
-<p>保存配置</p>
-</blockquote>
-<pre><code>&lt;LWS3&gt;save
-The current configuration will be written to the device.
-Are you sure to continue?[Y/N]y
-Now saving the current configuration to the slot 0.
-Save the configuration successfully.</code></pre><h3><span id="s4">S4：</span></h3><p><huawei>sys<br>Enter system view, return user view with Ctrl+Z.<br>[Huawei]sys LWS4<br>[LWS4]un in en<br>Info: Information center is disabled.<br>[LWS4]vlan 30<br>[LWS4-vlan30]vlan 40<br>[LWS4-vlan40]quit<br>[LWS4-Ethernet0/0/3]un sh<br>Info: Interface Ethernet0/0/3 is not shutdown.<br>[LWS4-Ethernet0/0/3]port link-t a<br>[LWS4-Ethernet0/0/3]port de vlan 30<br>[LWS4-Ethernet0/0/3]quit<br>[LWS4]int e0/0/4<br>[LWS4-Ethernet0/0/4]un sh<br>Info: Interface Ethernet0/0/4 is not shutdown.<br>[LWS4-Ethernet0/0/4]port link-t a<br>[LWS4-Ethernet0/0/4]port de vlan 40<br>[LWS4-Ethernet0/0/4]quit<br>[LWS4]int e0/0/1<br>[LWS4-Ethernet0/0/1]un sh<br>Info: Interface Ethernet0/0/1 is not shutdown.<br>[LWS4-Ethernet0/0/1]port link-t t<br>[LWS4-Ethernet0/0/1]port t allow vlan all<br>[LWS4-Ethernet0/0/1]quit<br>[LWS4]int e0/0/2<br>[LWS4-Ethernet0/0/2]un sh<br>Info: Interface Ethernet0/0/2 is not shutdown.<br>[LWS4-Ethernet0/0/2]port link-t t<br>[LWS4-Ethernet0/0/2]port t allow vlan all<br>[LWS4-Ethernet0/0/2]quit<br>[LWS4]stp mode stp<br>Info: This operation may take a few seconds. Please wait for a moment…done.</huawei></p>
-<h3><span id="s1">S1：</span></h3><pre><code>&lt;Huawei&gt;sys
-Enter system view, return user view with Ctrl+Z.
-[Huawei]sys LWS1</code></pre><blockquote>
-<p>去除提示信息</p>
-</blockquote>
-<pre><code>[LWS1]un in en
-Info: Information center is disabled.</code></pre><blockquote>
-<p>创建vlan</p>
-</blockquote>
-<pre><code>[LWS1]vlan 10
-[LWS1-vlan10]vlan 20
-[LWS1-vlan20]vlan 30
-[LWS1-vlan30]vlan 40</code></pre><blockquote>
-<p>设置接口</p>
-</blockquote>
-<pre><code>[LWS1]int g0/0/1
-[LWS1-GigabitEthernet0/0/1]un sh
-Info: Interface GigabitEthernet0/0/1 is not shutdown.
-[LWS1-GigabitEthernet0/0/1]port link-t t
-[LWS1-GigabitEthernet0/0/1]port t allow vlan all
-[LWS1-GigabitEthernet0/0/1]quit
-[LWS1]int g0/0/2
-[LWS1-GigabitEthernet0/0/2]un sh
-Info: Interface GigabitEthernet0/0/2 is not shutdown.
-[LWS1-GigabitEthernet0/0/2]port link-t t
-[LWS1-GigabitEthernet0/0/2]port t allow vlan all
-[LWS1-GigabitEthernet0/0/2]quit
-[LWS1]int g0/0/3
-[LWS1-GigabitEthernet0/0/3]un sh
-Info: Interface GigabitEthernet0/0/3 is not shutdown.
-[LWS1-GigabitEthernet0/0/3]port link-t t
-[LWS1-GigabitEthernet0/0/3]port t allow vlan all
-[LWS1-GigabitEthernet0/0/3]quit</code></pre><blockquote>
-<p>配置STP</p>
-</blockquote>
-<pre><code class="[LWS1]stp">Info: This operation may take a few seconds. Please wait for a moment...done.
-[LWS1]stp priority 0</code></pre>
-<blockquote>
-<p>配置vlan地址（网关），vrrp</p>
-</blockquote>
-<pre><code>[LWS1]int vlanif10
-[LWS1-Vlanif10]ip add 192.168.10.1 255.255.255.0　　　
-[LWS1-Vlanif10]vrrp vrid 10 virtual-ip 192.168.10.254
-[LWS1-Vlanif10]vrrp vrid 10 prio 120
-[LWS1-Vlanif10]int vlanif20
-[LWS1-Vlanif20]ip add 192.168.20.1 255.255.255.0
-[LWS1-Vlanif20]vrrp vrid 20 virtual-ip 192.168.20.254
-[LWS1-Vlanif20]vrrp vrid 20 prio 120
-[LWS1-Vlanif20]int vlanif30
-[LWS1-Vlanif30]ip add 192.168.30.1 255.255.255.0
-[LWS1-Vlanif30]vrrp vrid 30 virtual-ip 192.168.30.254
-[LWS1-Vlanif30]int vlanif40
-[LWS1-Vlanif40]ip add 192.168.40.1 255.255.255.0
-[LWS1-Vlanif40]vrrp vrid 40 virtual-ip 192.168.40.254
-[LWS1-Vlanif40]quit</code></pre><blockquote>
-<p>配置DHCP</p>
-</blockquote>
-<pre><code>[LWS1]dhcp en
-Info: The operation may take a few seconds. Please wait for a moment.done.
-[LWS1]ip pool vlan10
-Info:It&#39;s successful to create an IP address pool.
-[LWS1-ip-pool-vlan10]gateway-list 192.168.10.254
-[LWS1-ip-pool-vlan10]network 192.168.10.0 mask 255.255.255.0
-[LWS1-ip-pool-vlan10]quit
-[LWS1]ip pool vlan20
-Info:It&#39;s successful to create an IP address pool.
-[LWS1-ip-pool-vlan20]gateway-list 192.168.20.254
-[LWS1-ip-pool-vlan20]network 192.168.20.0 mask 255.255.255.0
-[LWS1-ip-pool-vlan20]excluded-ip-address 192.168.20.1 192.168.20.127
-[LWS1-ip-pool-vlan20]quit
-[LWS1]ip pool vlan30
-Info:It&#39;s successful to create an IP address pool.
-[LWS1-ip-pool-vlan30]gateway-list 192.168.30.254
-[LWS1-ip-pool-vlan30]network 192.168.30.0 mask 255.255.255.0
-[LWS1-ip-pool-vlan30]excluded-ip-address 192.168.30.1 192.168.30.127
-[LWS1-ip-pool-vlan30]quit
-[LWS1]ip pool vlan40
-Info:It&#39;s successful to create an IP address pool.
-[LWS1-ip-pool-vlan40]gateway-list 192.168.40.254
-[LWS1-ip-pool-vlan40]network 192.168.40.0 mask 255.255.255.0
-[LWS1-ip-pool-vlan40]excluded-ip-address 192.168.40.1 192.168.40.127
-[LWS1-ip-pool-vlan40]quit
-[LWS1]int vlan 10
-[LWS1-Vlanif10]dhcp select global
-[LWS1-Vlanif10]int vlan 20
-[LWS1-Vlanif20]dhcp select global
-[LWS1-Vlanif20]int vlan 30
-[LWS1-Vlanif30]dhcp select global
-[LWS1-Vlanif30]int vlan 40
-[LWS1-Vlanif40]dhcp select global
-[LWS1-Vlanif40]quit</code></pre><h3><span id="s2">S2：</span></h3><pre><code>&lt;Huawei&gt;sys
-Enter system view, return user view with Ctrl+Z.
-[Huawei]sys LWS2
-[LWS2]un in en
-Info: Information center is disabled.
-[LWS2]vlan 10
-[LWS2-vlan10]vlan 20
-[LWS2-vlan20]vlan 30
-[LWS2-vlan30]vlan 40
-[LWS2-vlan40]quit
-[LWS2]int g0/0/1
-[LWS2-GigabitEthernet0/0/1]un sh
-Info: Interface GigabitEthernet0/0/1 is not shutdown.
-[LWS2-GigabitEthernet0/0/1]port link-t t
-[LWS2-GigabitEthernet0/0/1]port t allow vlan all
-[LWS2-GigabitEthernet0/0/1]quit
-[LWS2]int g0/0/2
-[LWS2-GigabitEthernet0/0/2]un sh
-Info: Interface GigabitEthernet0/0/2 is not shutdown.
-[LWS2-GigabitEthernet0/0/2]port link-t t
-[LWS2-GigabitEthernet0/0/2]port t allow vlan all
-[LWS2-GigabitEthernet0/0/2]int g0/0/3
-[LWS2-GigabitEthernet0/0/3]un sh
-Info: Interface GigabitEthernet0/0/3 is not shutdown.
-[LWS2-GigabitEthernet0/0/3]port link-t t
-[LWS2-GigabitEthernet0/0/3]port t allow vlan all
-[LWS2-GigabitEthernet0/0/3]quit
-
-[LWS2]stp mode stp
-Info: This operation may take a few seconds. Please wait for a moment...done.
-[LWS2]stp prio 4096
-
-[LWS2]int vlanif10
-[LWS2-Vlanif10]ip add 192.168.10.2 24　　
-[LWS2-Vlanif10]vrrp vrid 10 virtual-ip 192.168.10.254
-[LWS2-Vlanif10]int vlanif20
-[LWS2-Vlanif20]ip add 192.168.20.2 24
-[LWS2-Vlanif20]vrrp vrid 20 virtual-ip 192.168.20.254
-[LWS2-Vlanif20]int vlanif30
-[LWS2-Vlanif30]ip add 192.168.30.2 24
-[LWS2-Vlanif30]vrrp vrid 30 virtual-ip 192.168.30.254
-[LWS2-Vlanif30]vrrp vrid 30 prio 120
-[LWS2-Vlanif30]int vlanif40
-[LWS2-Vlanif40]ip add 192.168.40.2 24
-[LWS2-Vlanif40]vrrp vrid 30 virtual-ip 192.168.40.254
-[LWS2-Vlanif40]un vrrp vrid 30 virtual-ip 192.168.40.254
-[LWS2-Vlanif40]vrrp vrid 40 virtual-ip 192.168.40.254
-[LWS2-Vlanif40]vrrp vrid 40 prio 120
-[LWS2-Vlanif40]quit
-
-[LWS2]dhcp en
-Info: The operation may take a few seconds. Please wait for a moment.done.
-[LWS2]i pool vlan10
-Info:It&#39;s successful to create an IP address pool.
-[LWS2-ip-pool-vlan10]gateway-list 192.168.10.254
-[LWS2-ip-pool-vlan10]network 192.168.10.0 mask 255.255.255.0
-[LWS2-ip-pool-vlan10]ex 192.168.10.128 192.168.10.253
-[LWS2-ip-pool-vlan10]quit
-[LWS2]i pool vlan20
-Info:It&#39;s successful to create an IP address pool.
-[LWS2-ip-pool-vlan20]gateway-list 192.168.20.254
-[LWS2-ip-pool-vlan20]network 192.168.20.0 mask 255.255.255.0
-[LWS2-ip-pool-vlan20]ex 192.168.20.128 192.168.20.253
-[LWS2-ip-pool-vlan20]quit
-[LWS2]i pool vlan30
-Info:It&#39;s successful to create an IP address pool.
-[LWS2-ip-pool-vlan30]gateway-list 192.168.30.254
-[LWS2-ip-pool-vlan30]network 192.168.30.0 mask 255.255.255.0
-[LWS2-ip-pool-vlan30]ex 192.168.30.128 192.168.30.253
-[LWS2-ip-pool-vlan30]quit
-[LWS2]i pool vlan40
-Info:It&#39;s successful to create an IP address pool.
-[LWS2-ip-pool-vlan40]gateway-list 192.168.40.254
-[LWS2-ip-pool-vlan40]network 192.168.40.0 mask 255.255.255.0
-[LWS2-ip-pool-vlan40]ex 192.168.40.128 192.168.40.253
-[LWS2-ip-pool-vlan40]quit
-[LWS2]
-[LWS2]int vlan 10
-[LWS2-Vlanif10]dhcp select global
-[LWS2-Vlanif10]int vlan 20
-[LWS2-Vlanif20]dhcp select global
-[LWS2-Vlanif20]int vlan 30
-[LWS2-Vlanif30]dhcp select global
-[LWS2-Vlanif30]int vlan 40
-[LWS2-Vlanif40]dhcp select global
-[LWS2-Vlanif40]quit</code></pre><h2><span id="三-测试">三、测试</span></h2><blockquote>
-<p>PC：<br>Ipconfig查看IP然后Ping另一台PC<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic3.png" alt><br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic4.png" alt><br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic5.png" alt></p>
-</blockquote>
-<blockquote>
-<p>S3或S4</p>
-</blockquote>
-<p><code>dis stp brief</code></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic6.png" alt></p>
-<blockquote>
-<p>S1或S2</p>
-</blockquote>
-<p><code>dis vrrp brief</code></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic7.png" alt><br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL5/pic8.png" alt></p>
-<hr>
-<p> <strong>文章汇总：</strong></p>
-<table><tr><td bgcolor="#FFFF00"> HCL的安装和使用</td></tr></table>
-
-<p><kbd><a href="/2019/09/09/web-HCL0/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#D1EEEE">ping通及Telnet</td></tr></table>
-
-<p><kbd><a href="/2019/09/09/web-HCL1/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#C0FF3E">VLAN间通信</td></tr></table>
-
-<p><kbd><a href="/2019/09/11/web-HCL2/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#54FF9F">DHCP配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/12/web-HCL3/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#EFFF00"> DHCP中继</td></tr></table>
-
-<p><kbd><a href="/2019/09/18/web-HCL4/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#DFEEEE">STP及VRRP配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/18/web-HCL5/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#C0FFFE">RIP配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/19/web-HCL6/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#54FFEF">OSPF配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/27/web-HCL7/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#0FFF00">ACL+NAT配置</td></tr></table>
-
-<p><kbd><a href="/2019/09/27/web-HCL8/index.html">go-></a></kbd></p>
-<table><tr><td bgcolor="#F1EEEE">使用eNSP搭建企业网络</td></tr></table>
-
-<p><kbd><a href="/2019/09/30/web-HCL9/index.html">go-></a></kbd></p>
-<hr>
+        <h2><span id="1-问题起源">1、问题起源</span></h2><ul>
+<li>由于自己日常使用的Chrome安装了太多插件，调试的时候受插件的影响，很难进行识别，因此需要一个单独用于开发调试的Chrome</li>
+<li>Chrome默认安装到C盘，移动到其他盘之后，再进行安装打开的仍是同一个浏览器</li>
+</ul>
+<h2><span id="2-解决方法">2、解决方法</span></h2><p>主要就是利用Chrome的多用户会生成一个独立的、相互隔离的浏览器</p>
+<h3><span id="方法一-自己指定存放数据路径推荐">方法一、自己指定存放数据路径(推荐)</span></h3><p>1、进入Chrome所在目录(可以通过默认的快捷方式右击-属性-打开文件所在位置)，接着右击Chrome，选择创建快捷方式</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716091222532.png" alt="创建快捷方式"></p>
+<p>2、对创建的图标进行命名，右键属性</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716091419216.png" alt="属性"></p>
+<p>3、目标字段：添加<code>--user-data-dir</code>参数，设置一个目标存放数据，笔者设置的是<code>D:\ChromeData\WebChrome</code></p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716091648127.png" alt="修改目标"></p>
+<p>4、确定（可以换一个图标再点确定！）</p>
+<h3><span id="方法二-直接生成新用户快捷方式">方法二、直接生成新用户快捷方式</span></h3><p> 打开谷歌浏览器，点击如下的图标</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716092020261.png" alt="点击图标"></p>
+<p>点击添加</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716092116598.png" alt="点击添加"></p>
+<p>输入任意用户名，默认勾选添加快捷方式，点击添加</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716092240575.png" alt="image-20200716092240575"></p>
+<p>之后就可以使用独立的Chrome了</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716092343187.png" alt="image-20200716092343187"></p>
+<p>而且，你可以在开发工具中指定Chrome路径为你创建的快捷方式的路径，之后默认就会以该浏览器打开网页了</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200716092823125.png" alt="IDE指定Chromepath"></p>
+<p>参考文档：</p>
+<ul>
+<li><a href="https://blog.csdn.net/lpw_cn/article/details/105574710" target="_blank" rel="noopener">Chrome双开(同一个版本配置两个独立的浏览器,附图)</a></li>
+<li><a href="https://blog.csdn.net/QiaoRui_/article/details/86512063" target="_blank" rel="noopener">启动多个独立谷歌浏览器</a></li>
+</ul>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
       
@@ -1517,12 +1270,12 @@ Info:It&#39;s successful to create an IP address pool.
 
 <!-- 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>STP及VRRP配置</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">1.8k</span></p>
+    <p><span class="copy-title">文章标题:</span>怎样拥有两个独立的Chrome</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">381</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-18, 16:13:56</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-24, 12:49:59</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/18/web-HCL5/" title="STP及VRRP配置">https://wallleap.cn/2019/09/18/web-HCL5/</a>
+    <p><span class="copy-title">发布时间:</span>2020-03-24, 10:33:14</p>
+    <p><span class="copy-title">最后更新:</span>2020-07-16, 09:29:10</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/24/chrometwo/" title="怎样拥有两个独立的Chrome">https://wallleap.cn/2020/03/24/chrometwo/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
     </p>
@@ -1530,12 +1283,12 @@ Info:It&#39;s successful to create an IP address pool.
  -->
 
     <div class="article_copyright">
-        <p><span class="copy-title">文章标题:</span>STP及VRRP配置</p>
-        <p><span class="copy-title">文章字数:</span><span class="post-count">1.8k</span></p>
+        <p><span class="copy-title">文章标题:</span>怎样拥有两个独立的Chrome</p>
+        <p><span class="copy-title">文章字数:</span><span class="post-count">381</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
-        <p><span class="copy-title">发布时间:</span>2019-09-18, 16:13:56</p>
-        <p><span class="copy-title">最后更新:</span>2019-10-24, 12:49:59</p>
-        <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/18/web-HCL5/" title="STP及VRRP配置">https://wallleap.cn/2019/09/18/web-HCL5/</a>
+        <p><span class="copy-title">发布时间:</span>2020-03-24, 10:33:14</p>
+        <p><span class="copy-title">最后更新:</span>2020-07-16, 09:29:10</p>
+        <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/24/chrometwo/" title="怎样拥有两个独立的Chrome">https://wallleap.cn/2020/03/24/chrometwo/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
